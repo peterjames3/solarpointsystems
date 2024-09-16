@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.card_title{
+  @apply text-2xl text-brandC font-poppins
+}
+.card_description{
+  @apply font-Rubik
+}
+.btn--primary {
+  @apply border border-green-700 bg-green-700 font-poppins font-medium text-white outline-cardBg transition-all delay-300 hover:bg-brandD focus:outline xxs:px-6 xxs:py-2 xs:px-7 sm:px-10 sm:py-3 sm:text-xl;
+}
+.btn--secondary {
+  @apply border border-green-700 bg-transparent font-medium text-white transition-all delay-300 hover:cursor-pointer hover:bg-green-700 focus:outline focus:ring focus:ring-cardBg xxs:px-6 xxs:py-2 xs:px-7 sm:px-10 sm:py-3 sm:text-xl;
+}
+.btn--quote {
+  @apply bg-brandD px-8 py-3 text-sm font-medium text-white outline-brandD transition-all delay-300 hover:bg-brandD focus:outline xl:text-xl;
+}
+
+.wrapper {
+  @apply mx-auto my-10 max-w-[1400px];
+}
+.wrapperproduct {
+  @apply mx-auto my-20 max-w-[1400px];
+}
+/* custom.css */
+.custom-bg-transparent {
+  background: rgba(12, 12, 12, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.blob {
+  background-image: url("../src/assets/illustration-your-users.svg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+.solar-heading {
+  font-size: clamp(2.5rem, 2.2727rem + 0.9697vw, 3rem);
+  color: whitesmoke;
+}
+/* Define a class for the menu */
+.menu-transition {
+  transition:
+    transform 0.5s ease 0.2s,
+    opacity 0.5s ease 0.2s;
+}
+
+/* Define the visible state */
+.menu-visible {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/* Define the hidden state */
+.menu-hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.home_clip {
+  clip-path: polygon(0% 0%, 100% 0, 86% 47%, 69% 100%, 0% 100%);
+
+  border-bottom: 2px;
+  border-color: #000063;
+}
+.backgroundImage {
+  background: url(./assets/quote..webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+  background-blend-mode: overlay;
+}
+.btn {
+  width: 12em;
+  height: 3.5em;
+  font-size: 17px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow:
+    6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
+
+.btn::before {
+  content: "";
+  width: 0;
+  height: 4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #16a34a 0%, #01502b 100%);
+  color: whitesmoke;
+
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 12em;
+}
+.btn:focus{
+    background-image: linear-gradient(to right, #16a34a 0%, #01502b 100%);
+  color: whitesmoke;
+}
+.card,
+.card_1,
+.card_2,
+.card_3,
+.card_4,
+.card_5 {
+  max-width: 500px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgb(185, 236, 185);
+}
+
+
+
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.spinner-container {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 6px solid blue;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn ease-in 1s;
+  animation-fill-mode: forwards;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .card,
+  .card_1,
+  .card_2,
+  .card_3,
+  .card_4,
+  .card_5 {
+    height: 220px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 800px;
+  }
+  .img {
+    max-width: 800px;
+    visibility: hidden;
+    display: none !important;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "image content";
+  position: relative;
+}
+
+.grid-areas {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "content";
+}
+
+.grid-image {
+  grid-area: image;
+  z-index: 1; /* Ensure the image is in the background */
+}
+
+.grid-content {
+  grid-area: content;
+  z-index: 2;
+  place-self: center; /* Centers the content vertically */
+}
