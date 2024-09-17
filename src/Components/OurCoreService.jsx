@@ -79,7 +79,7 @@ function OurCoreService() {
             </p>
             {/* Download PDF Button */}
             <a
-              href="/public/SolarpointSystemE.A.pdf"
+              href="/SolarpointSystemE.A.pdf"
               download="SolarpointSystemE.A.pdf"
               aria-label="Download the Solarpoint System Company Profile as a PDF"
               className="btn--primary inline-block"
