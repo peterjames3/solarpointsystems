@@ -84,7 +84,7 @@ function OurCoreService() {
               aria-label="Download the Solarpoint System Company Profile as a PDF"
               className="btn--primary inline-block"
             >
-              <button type="button">Download Company Profile</button>
+              Download Company Profile
             </a>
           </div>
         </div>
