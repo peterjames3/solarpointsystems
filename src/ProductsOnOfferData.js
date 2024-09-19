@@ -37,7 +37,7 @@ export default [
             "Powers a 32 Inches TV",
             "Includes phone charging",
             "Comes with a Bluetooth radio",
-            "Battery: 10AH",
+            "Battery: 20AH",
             "Spare parts available in case of breakage",
         ],
         metaDescription: "Home Solar Module AC2 with 100W solar panel, 10AH battery, supports 5 LED bulbs and 32-inch TV. Priced at KSH 15,000.",
