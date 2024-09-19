@@ -1,26 +1,41 @@
 import cart from "../assets/green-blue-shopping-cart-yellow.webp";
+import HomesolarAC1 from "../assets/HomesloarAC.png";
+import ProductsOnOffer from "./ProductsOnOffer";
 
 function ProductsIntro() {
   return (
     <section className="mx-auto w-full bg-gradient-to-r from-slate-700 to-gray-800">
-      <div className="wrapperproduct flex min-h-[30rem] flex-col gap-5 px-5 pt-[6rem] xs:flex-col sm:flex-row sm:pt-[5rem]">
-        <div className="w-full space-y-3 text-center ss:pt-1 sm:w-1/2 sm:text-start">
-          <h3 className="py-4 font-poppins text-4xl font-bold text-green-600 sm:text-6xl">
-            Shop Top Solar Products at Unmatched Prices
-          </h3>
-          <nav className="font-Rubik text-xl font-medium sm:text-2xl">
-            <p className="leading-[1.5em] text-slate-400">
-              Step into a greener future without stretching your budget. Our
-              online solar panel shop is committed to making renewable energy
-              accessible for all by offering the most competitive prices on the
-              market. Experience cutting-edge technology that turns sunlight
-              into electricity.
-            </p>
-          </nav>
+      <div className="wrapperproduct grid min-h-[15rem] grid-cols-1 gap-4 p-4 md:grid-cols-12">
+        {/* Left Section - Categories and Slider */}
+        <div className="md:col-span-9">
+          <ProductsOnOffer />
         </div>
 
-        <div className="w-full overflow-hidden rounded-md py-3 sm:w-1/2">
-          <img src={cart} alt="cart" className="h-full w-full object-fill" />
+        {/* Right Sidebar - Help Center, Return Policy, Call */}
+        <div className="flex flex-col justify-center space-y-6 bg-cardBg p-4 font-Rubik shadow-md shadow-black md:col-span-3">
+          <div className="rounded bg-white p-3 shadow-lg">
+            <h2 className="text-xl font-bold">EXCLUSIVE OFFERS</h2>
+            <p>
+              Unbeatable prices on select products. Shop now and save big!
+            </p>
+          </div>
+          <div className="rounded bg-white p-3 shadow-lg">
+            <h2 className="text-xl font-bold">EASY INSTALLATION</h2>
+            <p>
+              We offer quick and professional installation
+              services with every purchase
+            </p>
+          </div>
+          <div className="rounded bg-white p-3 shadow-lg">
+            <h2 className="text-xl font-bold">SHOP WITH US</h2>
+            <p>
+              Discover a variety of quality products. 
+            </p>
+          </div>
+          <div className="rounded bg-white p-3 text-center shadow-lg">
+            <h2 className="text-2xl font-bold">To order call</h2>
+            <p className="text-3xl font-bold">+254 703704062</p>
+          </div>
         </div>
       </div>
     </section>

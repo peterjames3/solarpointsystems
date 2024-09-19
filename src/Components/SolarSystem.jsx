@@ -63,7 +63,7 @@ function SolarSystem() {
               </h5>
             </div>
             <div className="flex h-[70%]flex-grow h-full flex-col items-center justify-center space-y-10">
-              <span className="text-8xl text-yellow-900 pt-10 sm:pt-16">
+              <span className="text-7xl text-yellow-900 pt-10 sm:pt-16">
                 {/* Use relevant icons for each system */}
                 {index === 0 && <HiOutlineLightBulb />}
                 {index === 1 && <GiSilverBullet />}

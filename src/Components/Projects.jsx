@@ -45,7 +45,7 @@ function Projects() {
               </div>
 
               <div className="h-[5rem] px-2 text-black">
-                <h5 className="font-poppins text-xl font-semibold text-brandC">
+                <h5 className="font-poppins text-xl font-medium text-gray-900">
                   {project.client}
                 </h5>
                 <p className="">{project.title}</p>
