@@ -9,12 +9,12 @@ import products from "../ProductsOnOfferData";
 
 const ProductsOnOffer = () => {
   return (
-    <section className="  h-full ">
+    <section className="h-full">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 4500,
+          delay: 5500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -26,7 +26,7 @@ const ProductsOnOffer = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="w-full  bg-white p-4 shadow-lg ss:flex ss:flex-row-reverse">
+            <div className="w-full bg-white p-4 shadow-lg ss:flex ss:flex-row-reverse">
               <div className="sm:w-[60%]">
                 {" "}
                 <img
@@ -36,14 +36,18 @@ const ProductsOnOffer = () => {
                   className="mb-4 h-[30rem] w-full rounded object-fill"
                 />
               </div>
-              <div className="sm:w-[40%] flex flex-col justify-center">
-                <h3 className="mb-2 text-xl font-bold font-poppins">{product.name}</h3>
+              <div className="flex flex-col justify-center sm:w-[40%]">
+                <h3 className="mb-2 font-poppins text-xl font-bold">
+                  {product.name}
+                </h3>
                 <ul className="mb-4 list-disc pl-4 text-left font-Rubik">
                   {product.description.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
-                <p className="text-lg font-semibold text-brandC font-Rubik">{product.price}</p>
+                <p className="font-Rubik text-lg font-semibold text-brandC">
+                  {product.price}
+                </p>
               </div>
             </div>
           </SwiperSlide>
