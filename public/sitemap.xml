@@ -5,79 +5,69 @@
     <lastmod>2024-09-25T22:50:53+01:00</lastmod>
     <priority>0.8</priority>
   </url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/about</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/products</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/blog</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/contact</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/projects</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solarhybrid</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solarwaterheaters</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solarwaterpump</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solarairconditioner</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solarwaterpurifier</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/group</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/powerbackup</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/solutions</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/SolarpointSystemE.A.pdf</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://solarpointsystemsea.co.ke/order</loc>
-	<lastmod>2024-09-25T22:50:53+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/about</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/products</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/blog</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/contact</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/projects</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solarhybrid</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solarwaterheaters</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solarwaterpump</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solarairconditioner</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solarwaterpurifier</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/powerbackup</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/solutions</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solarpointsystemsea.co.ke/order</loc>
+    <lastmod>2024-09-25T22:50:53+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
 </urlset>
