@@ -22,6 +22,10 @@ const Projects = () => {
           name="description"
           content="Experience our diverse range of solar projects, from residential to commercial, with Solar Point System."
         />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/projects"
+        />
       </Helmet>
       <div className="wrapper">
         <div className="flex flex-col space-y-10 pt-[12rem] text-center text-black">
@@ -33,7 +37,6 @@ const Projects = () => {
           </p>
         </div>
         <ProjectFiltering />
-     
       </div>
     </motion.section>
   );

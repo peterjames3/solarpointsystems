@@ -109,7 +109,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full bg-black">
-        <div className="mx-auto mt-0 grid max-w-[1400px] grid-cols-1 gap-8 space-y-3 px-9 py-16 text-center text-gray-300 ss:text-start sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-0 grid max-w-[1400px] grid-cols-1 gap-8 space-y-3 px-9 py-16 text-center text-gray-300 sm:grid-cols-2 sm:text-start lg:grid-cols-3">
           <div className="">
             <Link to="/" className="flex cursor-pointer items-center gap-2">
               <img src={logo} alt="logo" className="size-12" />
@@ -157,12 +157,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="mt-6 flex flex-col-reverse justify-between ss:col-span-2 ss:flex-row">
+          <div className="mt-6 flex flex-col-reverse justify-between sm:col-span-2 sm:flex-row">
             <div>
-              <h6 className="text-2xl font-medium text-brandC underline">
+              <h6 className="text-[1.3rem] font-medium text-brandC underline md:text-2xl">
                 Solutions
               </h6>
-              <ul className="*font-Rubik *:text-xl">
+              <ul className="*font-Rubik *:text-[1.1rem] *:md:text-xl">
                 <li className="py-2 text-sm">
                   <Link to="/powerbackup" className="hover:underline">
                     Power Backup
@@ -191,10 +191,10 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium text-brandC underline">
+              <h6 className="text-[1.3rem] font-medium text-brandC underline md:text-2xl">
                 Products
               </h6>
-              <ul className="*:text-xl">
+              <ul className="*:text-[1.1rem] *:md:text-xl">
                 <li className="py-2 text-sm">
                   <Link to="/products" className="hover:underline">
                     Solar Panels
@@ -218,10 +218,10 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium text-brandC underline">
+              <h6 className="text-[1.3rem] font-medium text-brandC underline md:text-2xl">
                 Company
               </h6>
-              <ul className="*:text-xl">
+              <ul className="*:text-[1.1rem] *:md:text-xl">
                 <li className="py-2 text-sm">
                   <Link to="/about" className="hover:underline">
                     About Us
@@ -237,15 +237,25 @@ function Footer() {
                     Home
                   </Link>
                 </li>
+                <li className="py-2 text-sm">
+                  <Link
+                    to="/sitemap.xml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Sitemap
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium text-brandC underline">
+              <h6 className="text-[1.3rem] font-medium text-brandC underline md:text-2xl">
                 Contact Us
               </h6>
-              <ul className="*:text-xl">
+              <ul className="*:text-[1.1rem] *:md:text-xl">
                 <li className="py-2 text-sm font-medium">
-                 Ruiru. Rowini House, 1st floor. Room 17
+                  Ruiru. Rowini House, 1st floor. Room 17
                 </li>
                 <li className="py-2 text-sm">
                   {" "}

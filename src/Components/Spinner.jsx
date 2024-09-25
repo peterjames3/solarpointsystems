@@ -1,12 +1,11 @@
-
-
 const Spinner = () => {
-    return (
-      <div className="spinner-overlay">
+  return (
+    <section className="flex h-screen items-center justify-center">
+      <div className="spinner-overlay h-full">
         <div className="spinner-container"></div>
       </div>
-    );
-  };
-  
-  export default Spinner;
-  
+    </section>
+  );
+};
+
+export default Spinner;

@@ -34,7 +34,7 @@ function Home() {
           name="description"
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."
         />
-        <link rel="canonical" href="https://kimgym.netlify.app/" />
+        <link rel="canonical" href="https://solarpointsystemsea.co.ke/" />
         {/* Open Graph tags */}
         <meta
           property="og:title"
@@ -45,29 +45,11 @@ function Home() {
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kimgym.netlify.app/" />
         <meta
-          property="og:image"
-          content="https://kimgym.netlify.app/images/solar-hero.jpg"
-        />{" "}
-        {/* Replace with a relevant image URL */}
-        {/* Twitter Card tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="SolarPoint - Your Reliable Energy Partner"
+          property="og:url"
+          content="https://solarpointsystemsea.co.ke/"
         />
-        <meta
-          name="twitter:description"
-          content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."
-        />
-        <meta
-          name="twitter:image"
-          content="https://kimgym.netlify.app/images/solar-hero.jpg"
-        />{" "}
         
-    <link rel="canonical" href="https://yourdomain.com/" />
-        {/* Replace with a relevant image URL */}
       </Helmet>
       <Header title="Solar Power Solutions" />
       <Hero />

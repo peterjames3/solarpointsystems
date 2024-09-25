@@ -16,6 +16,10 @@ const SolarAirConditioner = () => {
           name="description"
           content="Explore our range of solar air conditioners, designed to efficiently cool and heat your space using solar energy. Reduce energy costs while helping the environment."
         />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/solarairconditioner"
+        />
         <meta
           property="og:title"
           content="Solar Air Conditioners | Solar Point System"
@@ -27,11 +31,7 @@ const SolarAirConditioner = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourdomain.com/solarairconditioners" // replace with your actual URL
-        />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/images/solar-air-conditioner.jpg" // replace with a relevant image URL
+          content="https://solarpointsystemsea.co.ke/solarairconditioner"
         />
       </Helmet>
       <SolarAirConditionerIntro />

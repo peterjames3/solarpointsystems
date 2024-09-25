@@ -10,16 +10,16 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-  const [isLoading, setIstLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIstLoading(false);
+      setIsLoading(false);
     }, 1000);
 
     Aos.init({
       duration: 500,
-      easeing: "ease-i-sine,",
+      easing: "ease-in-sine",
     });
 
     return () => clearTimeout(timer);
@@ -32,11 +32,12 @@ function App() {
           <Spinner />
         ) : (
           <>
-            {" "}
             <Header />
-            <AnimatedRoutes />
+            <main className="min-h-[calc(100vh-150px)]">
+              <AnimatedRoutes />
+            </main>
             <Footer />
-            <ScrollToTopButton /> 
+            <ScrollToTopButton />
             <Whatapp />
           </>
         )}

@@ -6,11 +6,11 @@
   scroll-behavior: smooth;
 }
 
-.card_title{
-  @apply text-2xl text-brandC font-poppins
+.card_title {
+  @apply font-poppins text-2xl text-brandC;
 }
-.card_description{
-  @apply font-Rubik
+.card_description {
+  @apply font-Rubik;
 }
 .btn--primary {
   @apply border border-green-700 bg-green-700 font-poppins font-medium text-white outline-cardBg transition-all delay-300 hover:bg-brandD focus:outline xxs:px-6 xxs:py-2 xs:px-7 sm:px-10 sm:py-3 sm:text-xl;
@@ -126,8 +126,8 @@
 button:hover::before {
   width: 12em;
 }
-.btn:focus{
-    background-image: linear-gradient(to right, #16a34a 0%, #01502b 100%);
+.btn:focus {
+  background-image: linear-gradient(to right, #16a34a 0%, #01502b 100%);
   color: whitesmoke;
 }
 .card,
@@ -145,8 +145,6 @@ button:hover::before {
   overflow: hidden;
   border: 1px solid rgb(185, 236, 185);
 }
-
-
 
 .spinner-overlay {
   position: fixed;
@@ -251,6 +249,3 @@ button:hover::before {
   z-index: 2;
   place-self: center; /* Centers the content vertically */
 }
-
-
-

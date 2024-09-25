@@ -23,18 +23,26 @@ const SolarWaterPurifier = () => {
           content="Solar Water Purifiers | Solar Point System"
         />
         <meta
+          name="keywords"
+          content="solar water purifier, solar powered water filtration, solar energy, water filtration, sustainable water, energy efficiency"
+        />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/solarwaterpurifier"
+        />
+        <meta
           property="og:description"
           content="Discover our solar water purifiers, a clean and sustainable way to filter water using solar energy. Perfect for residential, commercial, and industrial settings."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourdomain.com/solarwaterpurifiers" // replace with your actual URL
+          content="https://solarpointsystemsea.co.ke/solarwaterpurifier"
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/images/solar-water-purifier.jpg" // replace with a relevant image URL
-        />
+          content="https://yourdomain.com/images/solar-water-purifier.jpg" 
+                 />
       </Helmet>
       <SolarWaterPurifiers />
       <SolarWaterPurifierMain />

@@ -17,6 +17,10 @@ function SolarWaterHeaters() {
           name="description"
           content="Discover our range of solar water heaters designed for efficiency and reliability. Explore solutions that meet all your water heating needs with solar energy."
         />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/solarwaterheaters"
+        />
         <meta
           property="og:title"
           content="Solar Water Heaters | Solar Point System"
@@ -28,13 +32,8 @@ function SolarWaterHeaters() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourdomain.com/solarwaterheaters" // replace with your actual URL
+          content="https://solarpointsystemsea.co.ke/solarwaterheaters"
         />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/images/solar-water-heater.jpg" // replace with a relevant image URL
-        />
-        
       </Helmet>
       <WaterHeaterHero />
       <WaterHeaterMain />

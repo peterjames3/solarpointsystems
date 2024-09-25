@@ -116,23 +116,9 @@ function ProductsPage() {
         />
         <meta
           property="og:url"
-          content="https://solarpointsystemseaa.netlify.app/products"
+          content="https://solarpointsystemsea.co.ke/products"
         />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags for Social Sharing */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Our Products | SolarPointSystems E.A"
-        />
-        <meta
-          name="twitter:description"
-          content="Discover our best-selling solar products including inverters, batteries, and solar panels. Power your life with SolarPoint System."
-        />
-        <meta
-          name="twitter:image"
-          content="/src/assets/410w-mono-Jinko-Tiger..webp"
-        />
+        
       </Helmet>
 
       <ProductsIntro />

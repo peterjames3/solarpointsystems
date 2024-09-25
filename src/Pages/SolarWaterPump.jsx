@@ -25,8 +25,11 @@ function SolarWaterPump() {
           content="solar water pumps | solarPointsystems"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mywebsite.com/example" />
-        <link rel="canonical" href="https://kimgym.netlify.app/" />
+   
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/solarwaterpump"
+        />
       </Helmet>
       <WaterPumpHero />
       <WaterPumpmain />

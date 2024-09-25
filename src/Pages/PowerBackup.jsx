@@ -29,23 +29,13 @@ function PowerBackup() {
           name="keywords"
           content="Solar Power, Renewable Energy, Solar Solutions, Energy Efficiency, Sustainable Power, Power Backup, Energy Management"
         />
-        <link rel="canonical" href="https://kimgym.netlify.app/power-backup" />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke//powerbackup"
+        />
         <meta
           property="og:title"
           content="SolarPoint - Power Backup Solutions"
-        />
-        <meta
-          property="og:description"
-          content="Discover advanced power backup solutions from SolarPoint, designed to ensure reliable and sustainable energy management."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://kimgym.netlify.app/power-backup"
-        />
-        <meta
-          property="og:image"
-          content="https://kimgym.netlify.app/images/power-backup.jpg" // Replace with your actual image URL
         />
       </Helmet>
       <PowerBackupHero />

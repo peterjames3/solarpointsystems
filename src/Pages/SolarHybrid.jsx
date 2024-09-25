@@ -21,7 +21,10 @@ function SolarHybrid() {
           name="keywords"
           content="Solar Hybrid, Renewable Energy, Hybrid Solutions, Solar Energy, Energy Efficiency, Sustainable Power"
         />
-        <link rel="canonical" href="https://kimgym.netlify.app/solar-hybrid" />
+        <link
+          rel="canonical"
+          href="https://solarpointsystemsea.co.ke/solarhybrid"
+        />
         <meta
           property="og:title"
           content="Solar Hybrid Solutions | Solar Point System"
@@ -33,11 +36,7 @@ function SolarHybrid() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://kimgym.netlify.app/solar-hybrid"
-        />
-        <meta
-          property="og:image"
-          content="https://kimgym.netlify.app/images/solar-hybrid.jpg" // Replace with your actual image URL
+          content="https://solarpointsystemsea.co.ke/solarhybrid"
         />
       </Helmet>
       <HybridHero />

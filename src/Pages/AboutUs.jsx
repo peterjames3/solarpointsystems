@@ -29,7 +29,7 @@ function Aboutus() {
           name="description"
           content="Discover the story behind solarPointsystems W.A, our core services, our mission, completed projects, and our achievements."
         />
-        <link rel="canonical" href="https://kimgym.netlify.app/about-us" />
+        <link rel="canonical" href="https://solarpointsystemsea.co.ke/about" />
         {/* Open Graph tags */}
         <meta property="og:title" content="Solar Point Systems | About Us" />
         <meta
@@ -37,30 +37,18 @@ function Aboutus() {
           content="Discover the story behind solarPointsystems, our core services, our mission, completed projects, and our achievements."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kimgym.netlify.app/about-us" />
         <meta
-          property="og:image"
-          content="https://kimgym.netlify.app/images/about-us-hero.jpg"
-        />{" "}
-        {/* Replace with the correct image URL */}
-        {/* Twitter Card tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Solar Point Systems | About Us" />
-        <meta
-          name="twitter:description"
-          content="Discover the story behind solarPointsystems, our core services, our mission, completed projects, and our achievements."
+          property="og:url"
+          content="https://solarpointsystemsea.co.ke/about"
         />
-        <meta
-          name="twitter:image"
-          content="https://kimgym.netlify.app/images/about-us-hero.jpg"
-        />{" "}
+    
         {/* Replace with the correct image URL */}
       </Helmet>
       <AboutUsHero />
       <OurCoreService />
       <Mission />
       <CompletedProject />
-     {/*  <Team /> */}
+      {/*  <Team /> */}
       <OurAchievements />
     </motion.section>
   );

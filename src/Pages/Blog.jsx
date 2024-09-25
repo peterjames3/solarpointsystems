@@ -61,7 +61,7 @@ function Blog() {
           name="description"
           content="Stay updated with our latest insights, stories, and news on solar energy solutions. Explore our blogs to learn more about the benefits of solar power."
         />
-            <link rel="canonical" href="https://kimgym.netlify.app/blog" />
+        <link rel="canonical" href="https://solarpointsystemsea.co.ke/blog" />
         {/* Open Graph tags */}
         <meta
           property="og:title"
@@ -72,27 +72,11 @@ function Blog() {
           content="Stay updated with our latest insights, stories, and news on solar energy solutions. Explore our blogs to learn more about the benefits of solar power."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kimgym.netlify.app/blog" />
         <meta
-          property="og:image"
-          content="https://kimgym.netlify.app/images/blog-hero.jpg"
-        />{" "}
-        {/* Replace with a relevant image URL */}
-        {/* Twitter Card tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="SolarPoint Blog - Insights and Updates"
+          property="og:url"
+          content="https://solarpointsystemsea.co.ke/blog"
         />
-        <meta
-          name="twitter:description"
-          content="Stay updated with our latest insights, stories, and news on solar energy solutions. Explore our blogs to learn more about the benefits of solar power."
-        />
-        <meta
-          name="twitter:image"
-          content="https://kimgym.netlify.app/images/blog-hero.jpg"
-        />{" "}
-        {/* Replace with a relevant image URL */}
+        
       </Helmet>
       <div className="mx-auto mt-0 max-w-[1400px]">
         {selectedBlog === null ? (
