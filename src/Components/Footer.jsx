@@ -5,7 +5,8 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer } from "react-toastify";
 import useToast from "./useToast";
 import logo from "../assets/Spm.svg";
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 const validate = (value) => {
   const errors = {};
   if (!value.email) {
@@ -135,7 +136,7 @@ function Footer() {
                 />
               </a>
               <a
-                href="https://www.instagram.com/sola21759?igsh=MXc5bTN0Mnk1a3g5dw=="
+                href="https://www.instagram.com/solarpoint_systems_e.a?igsh=MXc5bTN0Mnk1a3g5dw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -149,7 +150,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitterSquare
+                <BsTwitterX
                   size={30}
                   className="cursor-pointer transition-all delay-300 hover:text-blue-400"
                 />
