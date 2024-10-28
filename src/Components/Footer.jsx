@@ -262,7 +262,7 @@ function Footer() {
                   {" "}
                   Email: solarpointsystems1@gmail.com
                 </li>
-                <li className="py-2 text-sm">Tel: 0712741650 | 0703704062 </li>
+                <li className="py-2 text-sm">Tel: 0703704062 </li>
                 <li className="p-2 text-sm">Location: Nairobi Kenya</li>
               </ul>
             </div>

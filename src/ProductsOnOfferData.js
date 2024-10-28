@@ -42,7 +42,7 @@ export default [
         ],
         metaDescription: "Home Solar Module AC2 with 100W solar panel, 10AH battery, supports 5 LED bulbs and 32-inch TV. Priced at KSH 15,000.",
         keywords: ["solar energy", "100 watts solar panel", "LED support", "Kenya solar solutions"],
-        price: "KSH 15,000",
+        price: "KSH 20,000",
     },
     {
         id: 3,
