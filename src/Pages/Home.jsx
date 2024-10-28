@@ -29,7 +29,7 @@ function Home() {
       exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>SolarPoint - Your Reliable Energy Partner</title>
+        <title>SolarPointSystems - Your Reliable Energy Partner</title>
         <meta
           name="description"
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."
@@ -45,11 +45,7 @@ function Home() {
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://solarpointsystemsea.co.ke/"
-        />
-        
+        <meta property="og:url" content="https://solarpointsystemsea.co.ke/" />
       </Helmet>
       <Header title="Solar Power Solutions" />
       <Hero />

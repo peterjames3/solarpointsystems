@@ -26,7 +26,7 @@ const ProductsOnOffer = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="w-full bg-white p-4 shadow-lg ss:flex ss:flex-row-reverse">
+            <div className="w-full bg-white px-2 py-4 shadow-lg ss:flex ss:flex-row-reverse">
               <div className="sm:w-[60%]">
                 {" "}
                 <img
@@ -36,7 +36,7 @@ const ProductsOnOffer = () => {
                   className="mb-4 h-[30rem] w-full rounded object-fill"
                 />
               </div>
-              <div className="flex flex-col justify-center sm:w-[40%]">
+              <div className="flex flex-col justify-center pl-2 sm:w-[40%] sm:pl-6">
                 <h3 className="mb-2 font-poppins text-xl font-bold">
                   {product.name}
                 </h3>
