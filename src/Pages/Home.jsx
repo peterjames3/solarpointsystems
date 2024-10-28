@@ -29,7 +29,7 @@ function Home() {
       exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>SolarPointSystems - Your Reliable Energy Partner</title>
+        <title>SolarPoint Systems - Your Reliable Energy Partner</title>
         <meta
           name="description"
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."

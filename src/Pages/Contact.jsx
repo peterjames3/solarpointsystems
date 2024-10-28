@@ -20,7 +20,7 @@ function Contact() {
       exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>Solar Point Systems | Contact Us</title>
+        <title>SolarPoint Systems | Contact Us</title>
         <meta
           name="description"
           content="Get in touch with solarPointsystem. Find contact details, our location on the map, and read our FAQ section for more information."
