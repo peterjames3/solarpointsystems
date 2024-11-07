@@ -34,7 +34,7 @@ function SolarSystem() {
     },
     {
       name: "Platinum Solar Home System - 3.6kW",
-      price: "Ksh 134,000",
+      price: "Ksh 334,000",
       features: [
         "40 Lights",
         "TV and Home Theatre",
@@ -51,19 +51,19 @@ function SolarSystem() {
         <hr className="mx-auto w-[12rem] rounded-md border-2 border-textColor" />
         <h4 className="text-4xl font-medium">A System For Every Need</h4>
       </div>
-      <div className="grid w-full grid-cols-1 gap-8  px-10 ss:px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid w-full grid-cols-1 gap-8 px-10 ss:px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {systems.map((system, index) => (
           <div
             key={index}
             className="flex h-[53rem] transform flex-col overflow-hidden rounded-md shadow-xl shadow-black duration-300 hover:scale-105"
           >
             <div className="h-[20%] text-center">
-              <h5 className="solar-heading bg-brandD  py-3 text-[2rem]  leading-[3.5rem] font-medium font-poppins">
+              <h5 className="solar-heading bg-brandD py-3 font-poppins text-[2rem] font-medium leading-[3.5rem]">
                 {system.name} {system.price}
               </h5>
             </div>
-            <div className="flex h-[70%]flex-grow h-full flex-col items-center justify-center space-y-10">
-              <span className="text-7xl text-yellow-900 pt-10 sm:pt-16">
+            <div className="h-[70%]flex-grow flex h-full flex-col items-center justify-center space-y-10">
+              <span className="pt-10 text-7xl text-yellow-900 sm:pt-16">
                 {/* Use relevant icons for each system */}
                 {index === 0 && <HiOutlineLightBulb />}
                 {index === 1 && <GiSilverBullet />}

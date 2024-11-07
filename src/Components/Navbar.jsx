@@ -75,11 +75,15 @@ const Navbar = () => {
       } border-b border-slate-700`}
     >
       {/* Top Bar */}
-      <div className="mx-auto hidden max-w-[1400px] items-center justify-between px-2 pb-5 text-white sm:flex">
+      <address className="bg-green mx-auto hidden max-w-[1400px] items-center justify-between px-2 pb-5 text-white sm:flex">
         <div className="items-center gap-7 sm:flex">
           <nav className="flex items-center gap-1 text-[.95rem] md:text-[1.1rem]">
             <MdOutlineEmail className="text-secondaryBg" />{" "}
-            <span>solarpointsystems1@gmail.com</span>{" "}
+            <span>
+              <a href="mailto:solarpointsystems1@gmail.com">
+                solarpointsystems1@gmail.com
+              </a>
+            </span>{" "}
           </nav>
           <nav className="hidden items-center gap-1 text-[.95rem] md:flex md:text-[1.1rem]">
             <MdAccessTime className="text-secondaryBg" />
@@ -87,7 +91,9 @@ const Navbar = () => {
           </nav>
           <nav className="hidden items-center gap-1 text-[.95rem] ss:flex md:text-[1.1rem]">
             <MdOutlinePhone className="text-secondaryBg" />
-            <span>+254 703704062 </span>
+            <span>
+              <a href="tel:+254 703704062">+254 703704062</a>{" "}
+            </span>
           </nav>
         </div>
         {/*Social Links */}
@@ -105,7 +111,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-      </div>
+      </address>
       {/* Main Navbar */}
       <nav className="mx-auto mt-0 flex w-full items-center justify-between md:max-w-[1400px] md:gap-[5rem]">
         {/* Logo */}
@@ -226,7 +232,7 @@ const Navbar = () => {
                   SOLUTIONS <FaAngleDown className="text-white" />
                 </Link>
                 {isDropdownOpen && (
-                  <div className="fadeIn absolute left-5 mt-2 w-[20rem] divide-y-2 rounded bg-white font-poppins font-medium text-white shadow-md shadow-black text-sm">
+                  <div className="fadeIn absolute left-5 mt-2 w-[20rem] divide-y-2 rounded bg-white font-poppins text-sm font-medium text-white shadow-md shadow-black">
                     {/* Map over the solutionsLinks array */}
                     {solutionsLinks.map((link, index) => (
                       <Link
