@@ -67,7 +67,7 @@ function OurCoreService() {
             <h3 className="font-poppins text-4xl font-semibold uppercase md:text-4xl">
               We are a one-stop shop solution for all your energy needs.
             </h3>
-            <p className="font-Rubik text-2xl">
+            <p className="font-Rubik text-xl">
               SolarPoint Systems E.A was founded on the principles of making
               solar energy affordable and accessible for everyone in Kenya.
               Being in the industry for over 2 decades, we have the knowledge,

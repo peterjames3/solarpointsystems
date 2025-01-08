@@ -273,7 +273,7 @@ function Footer() {
         </div>
 
         <div className="mx-auto mt-3 flex max-w-[1400px] flex-col justify-between space-y-4 py-3 text-center text-sm font-semibold text-white ss:flex-row ss:space-y-0 ss:text-start">
-          <p>© 2024 All right reserved by SolarPoint System E.A.</p>
+          <p>© 2025 All right reserved by SolarPoint System E.A.</p>
           <p>
             All rights reserved.
             <span className="cursor-pointer text-slate-400">
