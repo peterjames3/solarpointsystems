@@ -14,8 +14,8 @@ function OurCoreService() {
         </h2>
         <hr className="w-[10rem] rounded border-b-[3px] border-blue-700" />
       </nav>
-      <section className="w-full bg-cardBg py-6">
-        <section className="wrapper my-5 flex min-h-[10rem] flex-col gap-4 p-3 md:flex-row">
+      <div className="w-full bg-cardBg py-6">
+        <div className="wrapper my-5 flex min-h-[10rem] flex-col gap-4 p-3 md:flex-row">
           <div className="ss:full relative h-[30rem] w-full overflow-hidden rounded-md bg-gradient-to-r from-slate-600 to-gray-800 xs:w-full sm:w-1/2">
             <img
               src={AboutUsImg}
@@ -23,47 +23,47 @@ function OurCoreService() {
               loading="lazy"
               className="object-fit h-full w-full flex-shrink-0 mix-blend-overlay"
             />
-            <article className="absolute left-0 top-0 grid h-full w-full grid-cols-2 grid-rows-2 place-content-center gap-10 px-4 py-4">
+            <div className="absolute left-0 top-0 grid h-full w-full grid-cols-2 grid-rows-2 place-content-center gap-10 px-4 py-4">
               {/* Core Values Icons */}
-              <article className="flex h-32 flex-row items-center justify-evenly">
-                <div className="text-2xl text-orange-400">
+              <div className="flex h-32 flex-row items-center justify-evenly">
+                <nav className="text-2xl text-orange-400">
                   <FaSearch />
-                </div>
-                <div className="text-white">
+                </nav>
+                <nav className="text-white">
                   <h4 className="text-xl font-semibold">Efficiency </h4>
                   <p>Streamlined Effectiveness</p>
-                </div>
-              </article>
-              <article className="flex h-32 flex-row items-center justify-evenly text-white">
-                <div className="text-2xl text-orange-400">
+                </nav>
+              </div>
+              <div className="flex h-32 flex-row items-center justify-evenly text-white">
+                <nav className="text-2xl text-orange-400">
                   <TbTargetArrow />
-                </div>
-                <div>
+                </nav>
+                <nav>
                   <h4 className="text-xl font-semibold">Productivity </h4>
                   <p>Optimized Output</p>
-                </div>
-              </article>
-              <article className="flex h-32 flex-row items-center justify-evenly">
-                <div className="text-2xl text-orange-400">
+                </nav>
+              </div>
+              <div className="flex h-32 flex-row items-center justify-evenly">
+                <nav className="text-2xl text-orange-400">
                   <IoBulbSharp />
-                </div>
-                <div className="text-white">
+                </nav>
+                <nav className="text-white">
                   <h4 className="text-xl font-semibold">Synergy </h4>
                   <p>Dynamic Fusion</p>
-                </div>
-              </article>
-              <article className="flex h-32 flex-row items-center justify-evenly">
-                <div className="text-2xl text-orange-400">
+                </nav>
+              </div>
+              <div className="flex h-32 flex-row items-center justify-evenly">
+                <nav className="text-2xl text-orange-400">
                   <CgCommunity />
-                </div>
-                <div className="text-white">
+                </nav>
+                <nav className="text-white">
                   <h4 className="text-xl font-semibold">Cohesion </h4>
                   <p>Collaboration Integration</p>
-                </div>
-              </article>
-            </article>
-          </section>
-          <section className="ss:full md:1/2 w-full space-y-9 px-3 pt-2 xs:w-full sm:w-1/2">
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div className="ss:full md:1/2 w-full space-y-9 px-3 pt-2 xs:w-full sm:w-1/2">
             <h3 className="font-poppins text-4xl font-semibold uppercase md:text-4xl">
               We are a one-stop shop solution for all your energy needs.
             </h3>
@@ -81,14 +81,12 @@ function OurCoreService() {
             <a
               href="/SolarpointSystemE.A.pdf"
               download="SolarpointSystemE.A.pdf"
-              target='_blank'
-              rel="noopener noreferrer"
               aria-label="Download the Solarpoint System Company Profile as a PDF"
               className="btn--primary inline-block"
             >
               Download Company Profile
             </a>
-          </section>
+          </div>
         </div>
       </div>
     </section>
