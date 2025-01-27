@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-function ContactUsButton() {
+function Solutionsbtn() {
   let navigate = useNavigate();
 
   function handleClick() {
     setTimeout(() => {
-      navigate("/contact");
+      navigate("/solutions");
     }, 1000);
   }
 
@@ -16,9 +16,9 @@ function ContactUsButton() {
       aria-label="Contact us"
       className="btn--primary"
     >
-      Get a Free Solar Consultation
+      Our Solutions
     </button>
   );
 }
 
-export default ContactUsButton;
+export default Solutionsbtn;
