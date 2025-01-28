@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Airportimg from "../assets/solarInstallation.webp";
+import Airportimg from "../../assets/solarInstallation.webp";
 import "aos/dist/aos.css";
-import QuotationModal from "./QuotationModal";
+import QuotationModal from "../QuotationModal";
 
 function Industryweserve() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,20 +31,12 @@ function Industryweserve() {
               data-aos-offset="50"
               className="flex h-full w-1/2 flex-col items-center bg-gray-200 py-7"
             >
-              <ul className="text-brabdC grid list-none grid-cols-1 items-baseline justify-center space-y-2 divide-y-2 divide-gray-500 font-poppins text-brandD font-semibold">
+              <ul className="text-brabdC grid list-none grid-cols-1 items-baseline justify-center space-y-2 divide-y-2 divide-gray-500 font-poppins font-semibold text-brandD">
                 <li className="">01. Get In Touch</li>
-                <li className="py-3 ">
-                  02. Consultance
-                </li>
-                <li className="py-3 ">
-                  03. Design and Installation
-                </li>
-                <li className="py-3">
-                  0.4 Solar On
-                </li>
-                <li className="py-3 ">
-                  05. Management
-                </li>
+                <li className="py-3">02. Consultance</li>
+                <li className="py-3">03. Design and Installation</li>
+                <li className="py-3">0.4 Solar On</li>
+                <li className="py-3">05. Management</li>
               </ul>
             </div>
             <div className="w-1/2 space-y-2 p-2 md:space-y-4 md:py-7">
@@ -71,8 +63,8 @@ function Industryweserve() {
               </p>
               <button
                 onClick={handleOpen}
-                aria-label='Get a Quote'
-                type="button" 
+                aria-label="Get a Quote"
+                type="button"
                 className="btn font-semibold transition-all delay-300 hover:text-white focus:ring-1 focus:ring-brandC"
               >
                 Get Quote
@@ -103,13 +95,13 @@ function Industryweserve() {
               </nav>
               <div className="flex flex-row items-center justify-between px-2 font-Rubik">
                 <nav className="w-1/2">
-                  <h4 className=" font-thin text-white">investors</h4>
+                  <h4 className="font-thin text-white">investors</h4>
                   <p className="font-semibold text-white">
                     15 x Fronius Eco 27kW
                   </p>
                 </nav>
                 <nav className="w-1/2">
-                  <h4 className=" font-thin text-white">Panels</h4>
+                  <h4 className="font-thin text-white">Panels</h4>
                   <p className="font-semibold text-white">
                     1330 x 355W Solar Panels
                   </p>

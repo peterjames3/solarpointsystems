@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Jackery from "../assets/Jackery..webp";
-import LED from "../assets/30LED..webp";
-import Product1 from "../assets/Lifetime _ Built-in BMS..webp";
-import Roomn from "../assets/amerisolar-280w..webp";
-import MoreProductsButton from "../Components/MoreProductsButton";
+import Jackery from "../../assets/Jackery..webp";
+import LED from "../../assets/30LED..webp";
+import Product1 from "../../assets/Lifetime _ Built-in BMS..webp";
+import Roomn from "../../assets/amerisolar-280w..webp";
+import MoreProductsButton from "../MoreProductsButton";
 
 import "aos/dist/aos.css";
 

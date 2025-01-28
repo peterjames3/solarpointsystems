@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import ContactHero from "../Components/ContactHero";
-import OurContact from "../Components/OurContact";
-import ContactForm from "../Components/ContactForm";
+import ContactHero from "../Components/Contact/ContactHero";
+import OurContact from "../Components/Contact/OurContact";
+import ContactForm from "../Components/Contact/ContactForm";
 import { motion } from "framer-motion";
-import AccordionSection from "../Components/AccordionSection";
+import AccordionSection from "../Components/Contact/AccordionSection";
 import { useLocation } from "react-router-dom";
 
 function Contact() {

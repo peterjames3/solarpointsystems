@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import ProjectData from "../ProjectData";
+import ProjectData from "../../ProjectData";
 
 function Projects() {
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ function Projects() {
         <div className="mx-auto my-1 max-w-[400px] py-3">
           <button
             onClick={handleNavigate}
-            aria-label='Read more about our projects'
+            aria-label="Read more about our projects"
             className="btn font-semibold transition-all delay-300 hover:text-white"
           >
             Read More

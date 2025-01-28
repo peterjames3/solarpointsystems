@@ -1,9 +1,9 @@
-import AboutUsHero from "../Components/AboutUsHero";
-import OurCoreService from "../Components/OurCoreService";
-import Mission from "../Components/Mission";
-import CompletedProject from "../Components/CompletedProject";
+import AboutUsHero from "../Components/About/AboutUsHero";
+import OurCoreService from "../Components/About/OurCoreService";
+import Mission from "../Components/About/Mission";
+import CompletedProject from "../Components/About/CompletedProject";
 import "aos/dist/aos.css";
-import OurAchievements from "../Components/OurAchievements";
+import OurAchievements from "../Components/About/OurAchievements";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

@@ -1,6 +1,6 @@
-import AboutPowerBackup from "../Components/AboutPowerBackup";
-import BackupPlans from "../Components/BackupPlans";
-import PowerBackupHero from "../Components/PowerBackupHero";
+import AboutPowerBackup from "../Components/PowerBackup/AboutPowerBackup";
+import BackupPlans from "../Components/PowerBackup/BackupPlans";
+import PowerBackupHero from "../Components/PowerBackup/PowerBackupHero";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";

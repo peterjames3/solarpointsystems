@@ -1,5 +1,5 @@
-import HybridHero from "../Components/HybridHero";
-import Hybridmain from "../Components/Hybridmain";
+import HybridHero from "../Components/SolarHybrid/HybridHero";
+import Hybridmain from "../Components/SolarHybrid/Hybridmain";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 

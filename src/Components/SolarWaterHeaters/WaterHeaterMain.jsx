@@ -1,8 +1,8 @@
 import { TbSquareCheckFilled } from "react-icons/tb";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
-import IsometricDiagram from "../assets/Camper-Van..webp";
-import Principle from "../assets/Principle..webp";
-import waterHeater from "../assets/water-heater..webp";
+import IsometricDiagram from "../../assets/Camper-Van..webp";
+import Principle from "../../assets/Principle..webp";
+import waterHeater from "../../assets/water-heater..webp";
 
 function WaterHeaterMain() {
   return (
@@ -29,8 +29,8 @@ function WaterHeaterMain() {
           </div>
 
           {/* Text Section */}
-          <div className=" w-full space-y-4 px-2 py-2 lg:w-1/2 lg:px-3">
-            <h3 className="pt-2 text-3xl font-bold text-black font-poppins">
+          <div className="w-full space-y-4 px-2 py-2 lg:w-1/2 lg:px-3">
+            <h3 className="pt-2 font-poppins text-3xl font-bold text-black">
               Warm water on demand, every day of the year, without the burden of
               a large electric bill?
             </h3>
@@ -44,7 +44,9 @@ function WaterHeaterMain() {
               for settings anywhere, from remote rural homes to bustling urban
               enterprises.
               <br />
-              <span className="text-2xl font-medium font-Rubik">Advantages:</span>
+              <span className="font-Rubik text-2xl font-medium">
+                Advantages:
+              </span>
             </p>
             <div className="mt-4 flex flex-col space-y-2">
               <div className="flex items-center">

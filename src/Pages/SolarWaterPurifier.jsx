@@ -1,6 +1,6 @@
-import SolarWaterPurifiers from "../Components/ SolarWaterPurifierIntro";
-import SolarWaterPurifierHero from "../Components/SolarWaterPurifierHero";
-import SolarWaterPurifierMain from "../Components/SolarWaterPurifierMain";
+import SolarWaterPurifiers from "../Components/SolarWaterPurifier/ SolarWaterPurifierIntro";
+import SolarWaterPurifierHero from "../Components/SolarWaterPurifier/SolarWaterPurifierHero";
+import SolarWaterPurifierMain from "../Components/SolarWaterPurifier/SolarWaterPurifierMain";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 

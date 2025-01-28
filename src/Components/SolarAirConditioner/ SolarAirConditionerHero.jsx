@@ -1,6 +1,6 @@
-import hybridAcImage from "../assets/HybridAirconditioner.webp";
-import offGridAcImage from "../assets/OffgridAirconditioner.webp";
-import solarAcIntroImage from "../assets/AirconditionerIntro.webp";
+import hybridAcImage from "../../assets/HybridAirconditioner.webp";
+import offGridAcImage from "../../assets/OffgridAirconditioner.webp";
+import solarAcIntroImage from "../../assets/AirconditionerIntro.webp";
 const airConditioners = [
   {
     id: 1,
@@ -32,12 +32,12 @@ const SolarAirConditionerHero = () => {
     <div className="w-full bg-gray-100 p-8">
       <div className="mx-auto max-w-7xl">
         {/* Creative Introduction Section */}
-        <section className="mb-12 flex flex-col items-center gap-8 rounded-lg  p-10 text-black shadow-lg sm:flex-row">
+        <section className="mb-12 flex flex-col items-center gap-8 rounded-lg p-10 text-black shadow-lg sm:flex-row">
           <div className="sm:w-1/2">
-            <h2 className="mb-4 text-4xl font-extrabold font-poppins">
+            <h2 className="mb-4 font-poppins text-4xl font-extrabold">
               What is a Solar Air Conditioner?
             </h2>
-            <p className="text-lg font-Rubik">
+            <p className="font-Rubik text-lg">
               A solar air conditioner is an energy-efficient system that uses
               solar power to heat or cool homes and businesses. By harnessing
               the sun&apos;s free energy, these systems significantly reduce
@@ -75,11 +75,13 @@ const SolarAirConditionerHero = () => {
                 />
               </div>
               <div className="p-6">
-                <h2 className="mb-3 text-2xl font-semibold text-gray-900 font-poppins">
+                <h2 className="mb-3 font-poppins text-2xl font-semibold text-gray-900">
                   {ac.name}
                 </h2>
-                <p className="mb-4 text-gray-700  font-Rubik">{ac.description}</p>
-                <ul className="list-disc space-y-2 pl-5 text-gray-600 font-Rubik">
+                <p className="mb-4 font-Rubik text-gray-700">
+                  {ac.description}
+                </p>
+                <ul className="list-disc space-y-2 pl-5 font-Rubik text-gray-600">
                   {ac.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}

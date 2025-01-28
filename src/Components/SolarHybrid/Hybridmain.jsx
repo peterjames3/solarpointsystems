@@ -1,14 +1,14 @@
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaCheckDouble } from "react-icons/fa6";
-import Hybrid from "../assets/hybrid..webp";
-import OrderNow from "../Components/OrderNow";
-import packages from "../Packages";
+import Hybrid from "../../assets/hybrid..webp";
+import OrderNow from "../OrderNow";
+import packages from "../../Packages";
 import "aos/dist/aos.css";
 
 function Hybridmain() {
   return (
-    <section className="my-5 w-full ">
-          <div className="w-full">
+    <section className="my-5 w-full">
+      <div className="w-full">
         {/* Solar Hybrid Section */}
         <div className="wrapper flex flex-col items-center gap-8 rounded-lg p-10 shadow-lg lg:flex-row">
           {/* Text Section */}
@@ -34,14 +34,13 @@ function Hybridmain() {
 
           {/* Image Section */}
           <div className="lg:w-1/2">
-            <div className="relative h-[30rem] w-full overflow-hidden rounded-lg  shadow-md">
+            <div className="relative h-[30rem] w-full overflow-hidden rounded-lg shadow-md">
               <img
                 src={Hybrid}
                 alt="Man working"
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
-          
             </div>
           </div>
         </div>

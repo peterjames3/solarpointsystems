@@ -1,10 +1,11 @@
-import SolarDesign from "../assets/PanelsWork_..webp";
-import solarSVG from "../assets/solar-panel..webp";
-import solarEnergy from "../assets/solar-energy..webp";
-import waterHeater from "../assets/s_waterheater..webp";
-import Powergeneration from "../assets/power-generation..webp";
-import Bulb from "../assets/bulb..webp";
-import Pump from "../assets/pump..webp";
+// import SolarDesign from ".../assets/PanelsWork_..webp";
+import SolarDesign from "../../assets/PanelsWork_..webp";
+import solarSVG from "../../assets/solar-panel..webp";
+import solarEnergy from "../../assets/solar-energy..webp";
+import waterHeater from "../../assets/s_waterheater..webp";
+import Powergeneration from "../../assets/power-generation..webp";
+import Bulb from "../../assets/bulb..webp";
+import Pump from "../../assets/pump..webp";
 import "aos/dist/aos.css";
 
 function OurSolutions() {

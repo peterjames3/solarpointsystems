@@ -1,7 +1,7 @@
-
-import purifierImg1 from "../assets/Purifier1.webp"; // Add appropriate image paths
-import purifierImg2 from "../assets/Purifier2.webp";
-import purifierImg3 from "../assets/syagewaterpurifier.webp";
+//import purifierImg1 from "../assets/Purifier1.webp"; // Add appropriate image paths
+import purifierImg1 from "../../assets/Purifier1.webp";
+import purifierImg2 from "../../assets/Purifier2.webp";
+import purifierImg3 from "../../assets/syagewaterpurifier.webp";
 
 const purifiers = [
   {
@@ -48,14 +48,13 @@ const purifiers = [
 ];
 const SolarWaterPurifierHero = () => {
   return (
-    <div className="w-full  p-8">
+    <div className="w-full p-8">
       <div className="wrapper mx-auto">
         <div className="space-y-2 py-4 text-center font-poppins text-slate-900">
           <h3 className="text-3xl font-medium">Solar Water Purifiers</h3>
           <hr className="mx-auto w-[12rem] rounded-md border-2 border-blue-700" />
           <h4 className="text-4xl font-semibold">A System For Every Need</h4>
         </div>
-     
 
         {/* Grid Layout for the Purifiers */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -94,6 +93,6 @@ const SolarWaterPurifierHero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default SolarWaterPurifierHero
+export default SolarWaterPurifierHero;

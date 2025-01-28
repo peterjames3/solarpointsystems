@@ -1,9 +1,9 @@
 "react";
-import HeroImg from "../assets/hero-2..webp";
+import HeroImg from "../../assets/hero-2..webp";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import Solutionsbtn from "./Solutionsbtn";
-import AboutUsButton from "./AboutUsButton";
+import Solutionsbtn from "../Solutionsbtn";
+import AboutUsButton from "../AboutUsButton";
 
 function Hero() {
   const [typeEffect] = useTypewriter({
@@ -33,7 +33,7 @@ function Hero() {
           className="h-full w-full flex-shrink-0 object-cover mix-blend-overlay"
         />
 
-        <div className="absolute left-[1.5%] top-[20%] max-w-[1200px] space-y-4 py-4 pl-8 xs:left-[5%] ss:left-[3%] ss:top-[25%] sm:left-[12%] sm:space-y-5 xl:left-[11.5%] xl:pl-12">
+        <div className="absolute left-[1.5%] top-[20%] max-w-[1100px] space-y-4 py-4 pl-8 xs:left-[5%] ss:left-[3%] ss:top-[25%] sm:left-[12%] sm:space-y-5 xl:left-[11.5%] xl:pl-12">
           <div className="h-full w-full space-y-6 px-3 sm:space-y-9 sm:px-0">
             <h1 className="font-body py-2 font-semibold text-brandC xxs:text-3xl xs:text-5xl sm:text-5xl md:text-6xl">
               Affordable Solar Installation & Solar Solutions in Kenya
@@ -47,8 +47,7 @@ function Hero() {
             </h2>
             <p className="font-Rubik font-medium leading-tight text-dimWhite xxs:text-xl xs:text-2xl sm:text-2xl">
               Leading Provider of{" "}
-              <span className="text-brandC">{typeEffect}</span> solutions for
-              Homes and Businesses
+              <span className="text-brandC">{typeEffect}</span> solutions
             </p>
             <div className="flex justify-start gap-6">
               <AboutUsButton

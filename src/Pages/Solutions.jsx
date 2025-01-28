@@ -1,20 +1,24 @@
-import OurSolutions from "../Components/OurSolutions";
-import SolarLedsHero from "../Components/SolarLedsHero";
+// import OurSolutions from "../Components/Home/OurSolutions";
+//import OurSolutions from "../Components/Home/OurSolutions ";
+import SolarLedsHero from "../Components/Solutions/SolarLedsHero";
 import LedsData from "../LedsData";
 import LedsProducts from "../Components/LedsProducts";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 function Solutions() {
   return (
-    <motion.section className="h-auto w-full"
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    exit={{opacity:0}}
+    <motion.section
+      className="h-auto w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <SolarLedsHero />
-      <OurSolutions />
+      {/* <OurSolutions /> */}
 
-      <h4 className="text-center text-4xl font-poppins pt-10 textblack  font-semibold font-Inter">Some of Our Solar Lights</h4>
-      <div className="wrapper grid grid-cols-1 ss:grid-cols-2 md:grid-rows-2 md:grid-cols-4 gap-5 min-h-[10rem]">
+      <h4 className="textblack font-Inter pt-10 text-center font-poppins text-4xl font-semibold">
+        Some of Our Solar Lights
+      </h4>
+      <div className="wrapper grid min-h-[10rem] grid-cols-1 gap-5 ss:grid-cols-2 md:grid-cols-4 md:grid-rows-2">
         {LedsData.map((item) => (
           <LedsProducts
             key={item.id}

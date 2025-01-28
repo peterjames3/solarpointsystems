@@ -1,4 +1,4 @@
-import AboutUsImg from "../assets/solar-installation2.webp";
+import AboutUsImg from "../../assets/solar-installation2.webp";
 import { FaSearch } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
 import { IoBulbSharp } from "react-icons/io5";

@@ -1,10 +1,10 @@
 import "aos/dist/aos.css";
-import missionImg from "../assets/mission.webp";
+import missionImg from "../../assets/mission.webp";
 function Mission() {
   return (
     <section data-aos="fade-up" data-aos-duration="3000" className="wrapper">
       <div className="flex w-full flex-col items-center justify-center gap-4 pb-10 pt-8 font-poppins text-3xl font-medium">
-        <h3 className="py-2 text-center font-poppins font-bold  text-black">
+        <h3 className="py-2 text-center font-poppins font-bold text-black">
           Our mission,vision and Milestone
         </h3>
         <hr className="w-[10rem] border-b-[3px] border-textColor" />

@@ -1,10 +1,10 @@
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaCheckDouble } from "react-icons/fa6";
-import OrderNow from "../Components/OrderNow";
+import OrderNow from "../OrderNow";
 import { GiSilverBullet } from "react-icons/gi";
 import { AiOutlineGold } from "react-icons/ai";
 import { TbSolarElectricity } from "react-icons/tb";
-import { backupSystems } from "../backupSystems";
+import { backupSystems } from "../../backupSystems";
 
 function BackupPlans() {
   return (

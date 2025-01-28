@@ -1,5 +1,5 @@
-import WaterHeaterHero from "../Components/WaterHeaterHero";
-import WaterHeaterMain from "../Components/WaterHeaterMain";
+import WaterHeaterHero from "../Components/SolarWaterHeaters/WaterHeaterHero";
+import WaterHeaterMain from "../Components/SolarWaterHeaters/WaterHeaterMain";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 

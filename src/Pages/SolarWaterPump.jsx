@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
-import WaterPumpHero from "../Components/WaterPumpHero"
-import WaterPumpmain from "../Components/WaterPumpmain"
+import WaterPumpHero from "../Components/SolarWaterPump/WaterPumpHero"
+import WaterPumpmain from "../Components/SolarWaterPump/WaterPumpmain"
 import lorentzwaterpump from "../assets/lorentzwaterpump..webp"
 import groundfos from "../assets/grundfoswaterpump..webp"
 import roomnypumpwaterpump from "../assets/roomnypumpwaterpump..webp"

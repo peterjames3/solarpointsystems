@@ -1,25 +1,25 @@
-import AboutUsImg from "../assets/EF_ECO..webp";
+import AboutUsImg from "../../assets/EF_ECO..webp";
+
 import "aos/dist/aos.css";
 
 function AboutPowerBackup() {
   return (
     <section className="w-full px-3 pt-8">
-    
-      <div className=" wrapper bg-white rounded-lg  shadow-lg">
+      <div className="wrapper rounded-lg bg-white shadow-lg">
         <div className="wrapper flex flex-col gap-8 p-10 sm:flex-row">
           {/* Image Section */}
-          <div className=" w-full overflow-hidden rounded-lg  sm:w-1/2">
+          <div className="w-full overflow-hidden rounded-lg sm:w-1/2">
             <img
               src={AboutUsImg}
               alt="Power Backup"
               loading="lazy"
-              className="h-full w-full md:object-contain "
+              className="h-full w-full md:object-contain"
             />
           </div>
 
           {/* Text Section */}
           <div className="w-full space-y-6 px-3 pt-3 sm:w-1/2">
-            <h3 className="text-3xl font-semibold uppercase text-black font-poppins md:text-4xl">
+            <h3 className="font-poppins text-3xl font-semibold uppercase text-black md:text-4xl">
               What is a power backup?
             </h3>
             <p className="font-Rubik text-xl text-gray-900">

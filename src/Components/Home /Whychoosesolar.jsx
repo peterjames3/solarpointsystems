@@ -1,4 +1,4 @@
-import ContactUsButton from "./ContactUsButton";
+import ContactUsButton from "../ContactUsButton";
 const WhyChooseSolar = () => {
   return (
     <section className="w-full">
@@ -50,10 +50,7 @@ const WhyChooseSolar = () => {
           {/* Call-to-Action (CTA) */}
           <div className="mt-2">
             <ContactUsButton />
-
           </div>
-
-          
         </div>
       </div>
     </section>

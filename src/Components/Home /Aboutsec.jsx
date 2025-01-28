@@ -1,11 +1,11 @@
-import SolarPanel from "../assets/solar-installation2.webp";
+import SolarPanel from "../../assets/solar-installation2.webp";
 
-import factory from "../assets/factory.webp";
-import Resident from "../assets/solarization1.webp";
-import commercial from "../assets/solarInstallation.webp";
+import factory from "../../assets/factory.webp";
+import Resident from "../../assets/solarization1.webp";
+import commercial from "../../assets/solarInstallation.webp";
 import { CiCircleCheck } from "react-icons/ci";
 
-import AboutUsButton from "./AboutUsButton";
+import AboutUsButton from "../AboutUsButton";
 
 import "aos/dist/aos.css";
 
@@ -23,7 +23,7 @@ function Aboutus() {
         <hr className="w-[10rem] rounded border-b-[3px] border-textColor" />
         <h4 className="text-center text-4xl font-medium">
           {" "}
-          We are #1 In The World Of Solar & Renewable Energy
+          Best Solar Power Company in Kenya
         </h4>
       </section>
       <div className="w-full items-start justify-between space-y-10 sm:flex sm:space-y-0">
@@ -33,23 +33,20 @@ function Aboutus() {
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            Enhancing Solar Energy Performance
+            Powering Kenya's Sustainable Future
           </h3>
-          <h4 className="text-4xl font-semibold">
-            Power Your Future with Dependable and Sustainable Energy Solutions!
+          <h4 className="text-3xl font-semibold">
+            Since 2014, we've been at the forefront of Kenya's solar energy
+            revolution, bringing reliable and affordable clean energy solutions
+            to homes and businesses.
           </h4>
         </div>
         <div className="space-y-2 font-poppins text-xl sm:w-1/2">
           <p>
-            Our expertise spans energy generation, energy management, and
-            electric mobility, offering comprehensive solutions for solar
-            installation, solar maintenance, and off-grid systems. We excel in
-            generation, consumption monitoring, and reporting on energy
-            efficiency. Our reference projects highlight our success in
-            delivering solar home systems/commercial to leading investors in the
-            photovoltaic (PV) sector. We provide customized solutions tailored
-            to meet specific customer needs, all while ensuring a strong
-            commitment to environmental sustainability.
+            We are committed to helping Kenyans access affordable, reliable, and
+            clean energy through solar power solutions. Whether you're looking
+            to reduce electricity costs, power your business, or go completely
+            off-grid, we've got you covered.
           </p>
           <AboutUsButton />
         </div>
@@ -145,7 +142,7 @@ function Aboutus() {
           <img
             src={factory}
             alt="solar panel in factory setup"
-            loading='lazy'
+            loading="lazy"
             className="h-full w-full object-cover mix-blend-overlay"
           />
           <div className="transform[-translate-x-1/2] absolute left-[50%] top-[60%] h-full w-full cursor-pointer space-y-5 bg-dimWhite pb-6 pt-3 text-center transition-all duration-500 ease-in-out hover:left-0 hover:top-0 hover:translate-y-0 hover:scale-100">
@@ -184,10 +181,10 @@ function Aboutus() {
           <img
             src={SolarPanel}
             alt="solar panel"
-            loading='lazy'
+            loading="lazy"
             className="h-full w-full object-cover mix-blend-overlay"
           />
-        <div className="transform[-translate-x-1/2] absolute left-[50%] top-[60%] h-full w-full cursor-pointer space-y-5 bg-dimWhite pb-6 pt-3 text-center transition-all duration-500 ease-in-out hover:left-0 hover:top-0 hover:translate-y-0 hover:scale-100">
+          <div className="transform[-translate-x-1/2] absolute left-[50%] top-[60%] h-full w-full cursor-pointer space-y-5 bg-dimWhite pb-6 pt-3 text-center transition-all duration-500 ease-in-out hover:left-0 hover:top-0 hover:translate-y-0 hover:scale-100">
             <h4 className="font-Rubik text-xl font-semibold text-brandC underline">
               Solar Panels
             </h4>
@@ -212,8 +209,8 @@ function Aboutus() {
                 <span>Polycrystalline Solar Panels</span>
               </div>
             </div>
-          </div> 
-        </div> 
+          </div>
+        </div>
       </div>
     </section>
   );

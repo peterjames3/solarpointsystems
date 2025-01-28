@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import { ToastContainer } from "react-toastify";
-import useToast from "./useToast";
+import useToast from "../useToast";
 const validate = (value) => {
   const errors = {};
 

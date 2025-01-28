@@ -3,17 +3,17 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import Header from "../Components/Navbar";
-import Hero from "../Components/Hero";
-import WhyUs from "../Components/WhyUs";
-import Aboutsec from "../Components/Aboutsec";
-import Blogsec from "../Components/Blogsec";
-import ProductsSlider from "../Components/ProductsSlider";
-import Projects from "../Components/Projects";
-import Testimonials from "../Components/Testimonial";
-import Industryweserve from "../Components/Industryweserve";
-import SolarSystem from "../Components/SolarSystem";
-import OurSolutions from "../Components/OurSolutions";
-import Whychoosesolar from "../Components/Whychoosesolar";
+import Hero from "../Components/Home /Hero";
+import WhyUs from "../Components/Home /WhyUs";
+import Aboutsec from "../Components/Home /Aboutsec";
+import Blogsec from "../Components/Home /Blogsec";
+import ProductsSlider from "../Components/Home /ProductsSlider";
+import Projects from "../Components/Home /Projects";
+import Testimonials from "../Components/Home /Testimonial";
+import Industryweserve from "../Components/Home /Industryweserve";
+import SolarSystem from "../Components/Home /SolarSystem";
+import OurSolutions from "../Components/Home /OurSolutions";
+import Whychoosesolar from "../Components/Home /Whychoosesolar";
 
 function Home() {
   const location = useLocation();
@@ -29,7 +29,9 @@ function Home() {
       exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>SolarPoint Systems - Your Reliable Energy Partner</title>
+        <title>
+          SolarPoint Systems - Your Reliable solar energy solution expert
+        </title>
         <meta
           name="description"
           content="Explore our comprehensive solar power solutions tailored to meet your energy needs. Learn why choosing solar is a smart decision and discover the advantages we offer."

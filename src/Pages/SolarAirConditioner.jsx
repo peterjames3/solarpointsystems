@@ -1,5 +1,5 @@
-import SolarAirConditionerIntro from "../Components/SolarAirConditionerIntro";
-import SolarAirConditionerHero from "../Components/ SolarAirConditionerHero";
+import SolarAirConditionerIntro from "../Components/SolarAirConditioner/SolarAirConditionerIntro";
+import SolarAirConditionerHero from "../Components/SolarAirConditioner/ SolarAirConditionerHero";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 

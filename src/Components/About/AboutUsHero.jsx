@@ -1,5 +1,5 @@
 // Import Swiper React components
-import Carousel3 from "../assets/solar-installation1.webp";
+import Carousel3 from "../../assets/solar-installation1.webp";
 
 const AboutUsHero = () => {
   return (
@@ -18,7 +18,7 @@ const AboutUsHero = () => {
             </h2>
           </div>
 
-          <div className="sm:w-1/2 font-Rubik">
+          <div className="font-Rubik sm:w-1/2">
             <h3 className="line-clamp-3 hidden text-start text-2xl font-semibold text-slate-300 sm:flex">
               We are the leading solar company in Kenya that thrives in quality
               solar services. We have a team of solar energy experts which

@@ -1,14 +1,14 @@
-import purifierImg3 from "../assets/syagewaterpurifier.webp";
+import purifierImg3 from "../../assets/syagewaterpurifier.webp";
 const SolarWaterPurifierMain = () => {
   return (
-    <section className='w-full'>
+    <section className="w-full">
       {/* Creative Introduction Section */}
-      <div className="wrapper flex flex-col items-center gap-8 rounded-lg p-10  shadow-lg lg:flex-row">
+      <div className="wrapper flex flex-col items-center gap-8 rounded-lg p-10 shadow-lg lg:flex-row">
         <div className="lg:w-1/2">
-          <h3 className="mb-4 text-4xl font-bold font-poppins">
+          <h3 className="mb-4 font-poppins text-4xl font-bold">
             What is a Solar Water Purifier?
           </h3>
-          <p className="text-lg font-Rubik">
+          <p className="font-Rubik text-lg">
             A solar water purifier is an advanced water filtration system that
             uses solar energy to remove objectionable elements from raw water.
             Unlike traditional purifiers that rely on fossil fuels or grid
@@ -23,13 +23,13 @@ const SolarWaterPurifierMain = () => {
           <img
             src={purifierImg3}
             alt="Solar Water Purifier"
-            loading='lazy'
+            loading="lazy"
             className="h-[30rem] w-full rounded-lg object-contain shadow-md"
           />
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default SolarWaterPurifierMain
+export default SolarWaterPurifierMain;
