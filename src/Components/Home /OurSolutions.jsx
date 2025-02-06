@@ -1,91 +1,88 @@
-// import SolarDesign from ".../assets/PanelsWork_..webp";
+import { Link } from "react-router-dom";
 import SolarDesign from "../../assets/PanelsWork_..webp";
-import solarSVG from "../../assets/solar-panel..webp";
-import solarEnergy from "../../assets/solar-energy..webp";
-import waterHeater from "../../assets/s_waterheater..webp";
-import Powergeneration from "../../assets/power-generation..webp";
-import Bulb from "../../assets/bulb..webp";
-import Pump from "../../assets/pump..webp";
+import airConditioner from "../../assets/AirconditionerIntro.webp";
+import solarMaintance from "../../assets/solarmaintance.jpg";
+import waterHeater from "../../assets/water-heater..webp";
+import powerBackup from "../../assets/solarPowerbackup.jpg";
+import WaterPump from "../../assets/Working-Pump..webp";
 import "aos/dist/aos.css";
-
+import OurSolutionCard from "./OurSolutionCard";
+import { Sun, Droplets, Flame, Battery, Wind, Wrench } from "lucide-react";
 function OurSolutions() {
+  const Solutions = [
+    {
+      title: "Solar Installation",
+      description:
+        "Professional installation of high-efficiency solar panels for homes and businesses",
+      icon: Sun,
+      imageUrl:
+        "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?ixlib=rb-4.0.3",
+      Link: "/",
+    },
+    {
+      title: "Solar Water Pump",
+      description:
+        "Efficient water pumping solutions powered by solar energy for agriculture and domestic use",
+      icon: Droplets,
+      imageUrl: WaterPump,
+      Link: "/solarwaterpump",
+    },
+    {
+      title: "Solar Water Heater",
+      description:
+        "Eco-friendly water heating systems utilizing solar thermal technology",
+      icon: Flame,
+      imageUrl: waterHeater,
+      Link: "/solarwaterheaters",
+    },
+    {
+      title: "Power Backup",
+      description:
+        "Reliable solar power backup solutions with advanced battery storage systems",
+      icon: Battery,
+      imageUrl: powerBackup,
+      Link: "/powerbackup",
+    },
+    {
+      title: "Solar Air Conditioner",
+      description:
+        "Energy-efficient cooling solutions powered by solar technology",
+      icon: Wind,
+      imageUrl: airConditioner,
+      Link: "/solarairconditioner",
+    },
+    {
+      title: "Maintenance Services",
+      description:
+        "Comprehensive maintenance and support for all solar installations",
+      icon: Wrench,
+      imageUrl: solarMaintance,
+      Link: "/solarhybrid",
+    },
+  ];
   return (
     <section className="mx-auto my-4 flex w-full flex-col space-y-5 px-2 md:px-3">
       <div className="w-full space-y-3 text-center font-poppins">
-        <h3 className="text-3xl font-bold">Our Solutions</h3>
+        <h3 className="text-3xl font-bold">Our Solar Power Solutions</h3>
         <hr className="mx-auto w-[12rem] rounded-md border-2 border-textColor" />
         <h4 className="text-4xl font-medium">
           Invest in your future with our solutions.
         </h4>
       </div>
       <div className="wrapper grid grid-cols-1 grid-rows-3 gap-0 sm:grid-cols-3 sm:grid-rows-1 sm:gap-3 md:gap-8">
-        <div className="flex h-full w-full flex-col items-center space-y-10 py-5 ss:space-y-3 md:space-y-12">
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="card flex w-full transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={solarSVG}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="card__content w-[70%]">
-              <h4 className="card_title">Solar Offgrid Power</h4>
-              <p className="card_description">
-                This system powers premises using only sunlight and stored
-                battery energy, ensuring utility grid independence.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1100"
-            className="card_1 flex transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={solarEnergy}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="card__content w-[70%]">
-              <h4 className="card_title">Solar Hybrid</h4>
-              <p className="card_description">
-                A Solar Hybrid system merges on-grid and off-grid benefits,
-                ideal for areas with grid access but frequent power outages.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1200"
-            className="card_2 flex transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={Powergeneration}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="card__content w-[70%]">
-              <h4 className="card_title">Solar Grid Tie</h4>
-              <p className="card_description">
-                Grid-tie systems feed electricity from your panels to the grid,
-                and you&apos;re compensated by Kenya Power for the generated
-                power.
-              </p>
-            </div>
-          </div>
+        <div className="bg grid grid-cols-1 gap-6">
+          {Solutions.slice(0, 3).map((solution, index) => (
+            <OurSolutionCard
+              key={index}
+              title={solution.title}
+              description={solution.description}
+              icon={solution.icon}
+              imageUrl={solution.imageUrl}
+              link={solution.Link}
+            />
+          ))}
         </div>
+
         <div className="w-full overflow-hidden rounded-lg">
           <img
             src={SolarDesign}
@@ -94,70 +91,18 @@ function OurSolutions() {
             loading="lazy"
           />
         </div>
-        <div className="flex h-full w-full flex-col items-center space-y-10 py-5 ss:space-y-3 md:space-y-12">
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="card_3 flex transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={waterHeater}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="card__content w-[70%]">
-              <h4 className="card_title">Solar Water Heaters</h4>
-              <p className="card_description">
-                Solar Water Heaters cut annual hot water costs by 70% and are
-                supplied and installed in Kenya.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1100"
-            className="card_4 flex transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={Bulb}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="card__content w-[70%]">
-              <h4 className="card_title"> Solar Water Pumps </h4>
-              <p className="card_description">
-                The ideal solution for water supply and pumping in remote Kenyan
-                areas aims to ensure water availability everywhere.
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="1200"
-            className="card_5 flex transform cursor-pointer justify-around gap-2 duration-300 ease-in-out hover:scale-105 hover:bg-cardBg hover:shadow-md hover:shadow-black"
-          >
-            <div className="w-[30%]">
-              <img
-                src={Pump}
-                alt="solar img"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="card__content w-[70%]">
-              <h4 className="card_title"> Solar Lights</h4>
-              <p className="card_description">
-                Solar lights are eco-friendly, easy to install, and provide
-                significant illumination; we supply Solar LED Lights in Kenya.
-              </p>
-            </div>
-          </div>
+
+        <div className="grid grid-cols-1 gap-6">
+          {Solutions.slice(3, 6).map((solution, index) => (
+            <OurSolutionCard
+              key={index}
+              title={solution.title}
+              description={solution.description}
+              icon={solution.icon}
+              imageUrl={solution.imageUrl}
+              link={solution.Link}
+            />
+          ))}
         </div>
       </div>
     </section>

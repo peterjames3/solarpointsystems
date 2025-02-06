@@ -3,8 +3,12 @@ import SolarWaterPurifierHero from "../Components/SolarWaterPurifier/SolarWaterP
 import SolarWaterPurifierMain from "../Components/SolarWaterPurifier/SolarWaterPurifierMain";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 const SolarWaterPurifier = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.section
       className="h-auto w-full"

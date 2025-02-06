@@ -1,10 +1,13 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { LuCheckCircle } from "react-icons/lu";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Jackery from "../../assets/Jackery..webp";
+import Inverter from "../../assets/must2-pv1800..webp";
+import monocrystalline from "../../assets/410w-mono-Jinko-Tiger..webp";
+import polycrystalline from "../../assets/335w-poly-panle-Yingii..webp";
 import LED from "../../assets/30LED..webp";
 import Product1 from "../../assets/Lifetime _ Built-in BMS..webp";
 import Roomn from "../../assets/amerisolar-280w..webp";
@@ -14,23 +17,35 @@ import "aos/dist/aos.css";
 
 // import required modules
 import { Parallax, Pagination, Navigation } from "swiper/modules";
+import { Sun, Sparkles, Coins, ThermometerSun, Clock } from "lucide-react";
 
+const ComparisonFeature = ({ icon, title, mono, poly }) => (
+  <div className="grid grid-cols-3 items-center gap-4 border-b border-gray-100 py-4">
+    <div className="flex items-center gap-2">
+      {icon}
+      <span className="font-medium">{title}</span>
+    </div>
+    <div className="text-center">{mono}</div>
+    <div className="text-center">{poly}</div>
+  </div>
+);
 function ProductsSlider() {
   return (
-    <>
-      <section className="flex w-full flex-col items-center space-y-3">
+    <div className="bg-cardBg">
+      <section className="mx-auto mt-0 flex max-w-[1000px] flex-col items-center space-y-3">
         <h3 className="pt-9 text-center font-poppins text-3xl font-bold text-black">
           Products
         </h3>
         <hr className="w-[10rem] rounded border-b-[3px] border-textColor" />
         <h4 className="text-center font-poppins text-4xl font-medium">
-          Discover Our Premier Product Collection
+          SolarPointSystems EA – Powering Kenya with High-Performance Solar
+          Panels & Accessories
         </h4>
       </section>
       <section
         data-aos="zoom-in"
         data-aos-delay="70"
-        className="my-20 min-h-[28rem] bg-cardBg py-10"
+        className="min-h-[28rem] py-10"
       >
         <Swiper
           style={{
@@ -56,11 +71,11 @@ function ProductsSlider() {
             <section className="max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
               <div className="w-full space-y-6 px-4 md:w-1/2">
                 <div
-                  className="title font-bond py-4 font-poppins text-5xl text-black"
+                  className="title py-4 font-poppins text-5xl font-bold text-black"
                   data-swiper-parallax="-300"
                 >
                   <h3 className="font-Poppins text-4xl font-bold md:text-5xl">
-                    Jackery Solar is one of the best our product
+                    Monocrystalline Solar Panel
                   </h3>
                 </div>
                 <div
@@ -68,28 +83,45 @@ function ProductsSlider() {
                   data-swiper-parallax="-200"
                 ></div>
                 <div
-                  className="font-Rubik text-xl font-medium text-slate-600"
+                  className="space-y-2 font-Rubik font-medium"
                   data-swiper-parallax="-100"
                 >
                   <p>
-                    Jackery Solar Generator 15000, explorer 1500 and 2
-                    XSolarsaga 1-- X solar panel with 3X110V/18000W AC outlet,
-                    solar mobile lithium battery pack for outdoor RV/Van
-                    camping, overlanding...
-                    <br />{" "}
-                    <span className="font-medium uppercase">
-                      Superior solar charging:
-                    </span>{" "}
-                    Intergrate and combine the Explorer 1500 and 2 SolarSaga
+                    These high-efficiency panels are perfect for both
+                    residential and commercial use, offering the best return on
+                    investment due to their superior energy output and
+                    longevity.
+                    <br />
                   </p>
+                  <h5 className="text-xl font-semibold uppercase text-gray-900">
+                    Key Features of Monocrystalline Solar Panels:
+                  </h5>
+                  <ul>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> High
+                      efficiency for optimal energy generation
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" />{" "}
+                      Durability and long lifespan, ideal for Kenyan climate
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Low
+                      maintenance and high performance in all seasons
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Perfect
+                      for reducing energy bills and promoting sustainability
+                    </li>
+                  </ul>
                 </div>
                 <MoreProductsButton />
               </div>
 
               <div className="w-full md:w-1/2">
                 <img
-                  src={Jackery}
-                  alt="img"
+                  src={monocrystalline}
+                  alt="Monocrystalline Solar Panel"
                   loading="lazy"
                   className="object-fit h-[30rem] w-[100%] rounded-md"
                 />
@@ -100,11 +132,11 @@ function ProductsSlider() {
             <section className="max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
               <div className="w-full space-y-6 px-4 md:w-1/2">
                 <div
-                  className="title font-bond py-4 font-poppins text-5xl"
+                  className="title py-4 font-poppins text-5xl font-bold text-black"
                   data-swiper-parallax="-300"
                 >
-                  <h3 className="font-Poppins text-4xl font-bold text-black md:text-5xl">
-                    280W amerisolar Solar Panel
+                  <h3 className="font-Poppins text-4xl font-bold md:text-5xl">
+                    Polycrystalline Solar Panel
                   </h3>
                 </div>
                 <div
@@ -112,38 +144,58 @@ function ProductsSlider() {
                   data-swiper-parallax="-200"
                 ></div>
                 <div
-                  className="font-Rubik text-xl font-medium text-slate-600"
+                  className="space-y-2 font-Rubik font-medium"
                   data-swiper-parallax="-100"
                 >
                   <p>
-                    Amerisolar solar panel manufacturer that has been in the
-                    industry for over 25 years. They produce a wide range of
-                    photovoltaic (PV) modules suitable for all types of
-                    installations, including residential, commercial, and
-                    industrial projects. Their products are known for being:
-                    <br />{" "}
-                    <span className="font-medium uppercase">Reliable</span>{" "}
-                    Efficient, and Competitively priced
+                    Polycrystalline panels offer a reliable and cost-effective
+                    solution for both residential and commercial energy needs in
+                    Kenya.These panels provide excellent performance at a
+                    competitive price point.
+                    <br />
                   </p>
+                  <h5 className="text-xl font-semibold uppercase text-gray-900">
+                    Key Features of Polycrystalline Solar Panels:
+                  </h5>
+                  <ul>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> High
+                      efficiency at an affordable price, ideal for Kenya’s
+                      climate
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Long
+                      lifespan, providing reliable performance for years
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Low
+                      maintenance requirements for hassle-free use
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Great
+                      value for money, helping reduce electricity bills.
+                    </li>
+                  </ul>
                 </div>
                 <MoreProductsButton />
               </div>
 
               <div className="w-full md:w-1/2">
                 <img
-                  src={Roomn}
-                  alt="img"
+                  src={polycrystalline}
+                  alt="Polycrystalline Solar Panel"
                   loading="lazy"
                   className="object-fit h-[30rem] w-[100%] rounded-md"
                 />
               </div>
             </section>
           </SwiperSlide>
+
           <SwiperSlide>
-            <section className="max-w-8xl max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
+            <section className="max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
               <div className="w-full space-y-6 px-4 md:w-1/2">
                 <div
-                  className="title font-bond py-4 font-poppins text-5xl text-black"
+                  className="title py-4 font-poppins text-5xl font-bold text-black"
                   data-swiper-parallax="-300"
                 >
                   <h3 className="font-Poppins text-4xl font-bold md:text-5xl">
@@ -155,40 +207,116 @@ function ProductsSlider() {
                   data-swiper-parallax="-200"
                 ></div>
                 <div
-                  className="font-Rubik text-xl font-medium text-slate-600"
+                  className="space-y-2 font-Rubik font-medium"
                   data-swiper-parallax="-100"
                 >
                   <p>
-                    Designed to emit a greater amount of light, high-power LEDs
-                    are used in lighting applications where high brightness is
-                    required. These LEDs require heat sinks to manage the higher
-                    heat output associated with their operation. They are used
-                    in street lights, high-bay lighting, and automotive
-                    headlights.
-                    <br />{" "}
-                    <span className="font-medium uppercase">
-                      Superior solar charging:
-                    </span>{" "}
-                    Intergrate and combine the Explorer 1500 and 2 SolarSaga
+                    High-power LEDs are designed to emit a greater amount of
+                    light, making them ideal for applications requiring high
+                    brightness. These LEDs are commonly used in street lights,
+                    high-bay lighting, automotive headlights, and more.
+                    <br />
                   </p>
+                  <h5 className="text-xl font-semibold uppercase text-gray-900">
+                    Key Features of High-Power LEDs:
+                  </h5>
+                  <ul>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> High
+                      brightness for optimal lighting performance
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Long
+                      lifespan, reducing the need for frequent replacements
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" />{" "}
+                      Energy-efficient, reducing power consumption
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Requires
+                      heat sinks for effective cooling
+                    </li>
+                  </ul>
                 </div>
                 <MoreProductsButton />
               </div>
               <div className="w-full md:w-1/2">
                 <img
                   src={LED}
-                  alt="img"
+                  alt="High-Power LED"
                   loading="lazy"
                   className="object-fit h-[30rem] w-[100%] rounded-md"
                 />
               </div>
             </section>
           </SwiperSlide>
+
           <SwiperSlide>
             <section className="max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
               <div className="w-full space-y-6 px-4 md:w-1/2">
                 <div
-                  className="title font-bond py-4 font-poppins text-5xl text-black"
+                  className="title py-4 font-poppins text-5xl font-bold text-black"
+                  data-swiper-parallax="-300"
+                >
+                  <h3 className="font-Poppins text-4xl font-bold md:text-5xl">
+                    Inverters
+                  </h3>
+                </div>
+                <div
+                  className="subtitle font-poppins font-semibold text-black"
+                  data-swiper-parallax="-200"
+                ></div>
+                <div
+                  className="space-y-2 font-Rubik font-medium"
+                  data-swiper-parallax="-100"
+                >
+                  <p>
+                    Inverters are essential components in solar power systems,
+                    converting DC (Direct Current) energy generated by solar
+                    panels into AC (Alternating Current) electricity used by
+                    most home appliances.
+                    <br />
+                  </p>
+                  <h5 className="text-xl font-semibold uppercase text-gray-900">
+                    Types of Inverters:
+                  </h5>
+                  <ul>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> String
+                      Inverters – Ideal for residential and small commercial
+                      solar systems
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" />{" "}
+                      Microinverters – Best for optimizing energy output for
+                      each individual solar panel
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Hybrid
+                      Inverters – Combine solar energy with battery storage for
+                      uninterrupted power supply
+                    </li>
+                  </ul>
+                </div>
+                <MoreProductsButton />
+              </div>
+
+              <div className="w-full md:w-1/2">
+                <img
+                  src={Inverter}
+                  alt="Inverters"
+                  className="h-[30rem] w-[100%] rounded-md bg-cover bg-center"
+                />
+              </div>
+            </section>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <section className="max-w-8xl mx-auto mt-2 flex flex-col-reverse gap-0 px-2 xs:flex-col-reverse ss:flex-col-reverse ss:gap-2 ss:px-16 sm:flex-row md:flex-row md:gap-3">
+              <div className="w-full space-y-6 px-4 md:w-1/2">
+                <div
+                  className="title py-4 font-poppins text-5xl font-bold text-black"
                   data-swiper-parallax="-300"
                 >
                   <h3 className="font-Poppins text-4xl font-bold md:text-5xl">
@@ -200,29 +328,44 @@ function ProductsSlider() {
                   data-swiper-parallax="-200"
                 ></div>
                 <div
-                  className="font-Rubik text-xl font-medium text-slate-600"
+                  className="space-y-2 font-Rubik font-medium"
                   data-swiper-parallax="-100"
                 >
                   <p>
-                    Lithium batteries are a type of rechargeable battery that
-                    has become the cornerstone of modern portable electronics,
-                    electric vehicles, and renewable energy storage solutions.
-                    They are preferred for their high energy density, long life
-                    cycle, and relative lightness compared to other types of
-                    rechargeable batteries.
-                    <br /> <span className="font-medium uppercase">
-                      Types:
-                    </span>{" "}
-                    Lithium-ion (Li-ion), Lithium Polymer (LiPo), Lithium Iron
-                    Phosphate (LiFePO₄)
+                    Lithium batteries are widely used in a variety of
+                    applications, including renewable energy storage. Known for
+                    their high energy density, long lifespan, and lightweight
+                    design.
+                    <br />
                   </p>
+                  <h5 className="text-xl font-semibold uppercase text-gray-900">
+                    Types of Lithium Batteries:
+                  </h5>
+                  <ul>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" />{" "}
+                      Lithium-ion (Li-ion) – Common in portable electronics and
+                      electric vehicles
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Lithium
+                      Polymer (LiPo) – Lightweight and flexible, often used in
+                      drones and small devices
+                    </li>
+                    <li className="flex items-center">
+                      <LuCheckCircle className="mr-3 text-green-500" /> Lithium
+                      Iron Phosphate (LiFePO₄) – Known for safety and longevity,
+                      often used in solar energy storage
+                    </li>
+                  </ul>
                 </div>
                 <MoreProductsButton />
               </div>
+
               <div className="w-full md:w-1/2">
                 <img
                   src={Product1}
-                  alt="img"
+                  alt="Lithium Batteries"
                   className="h-[30rem] w-[100%] rounded-md bg-cover bg-center"
                 />
               </div>
@@ -230,7 +373,66 @@ function ProductsSlider() {
           </SwiperSlide>
         </Swiper>
       </section>
-    </>
+
+      <section className="mx-auto mt-0 max-w-[1440px] rounded-2xl p-8 shadow-sm">
+        <h3 className="mb-8 text-center text-2xl font-bold">
+          Monocrystalline vs Polycrystalline
+        </h3>
+        <div className="mb-8 grid grid-cols-3 gap-4">
+          <div className="text-center">
+            <span className="font-medium text-gray-600">Features</span>
+          </div>
+          <div className="text-center">
+            <div className="rounded-lg bg-gray-50 p-4">
+              <span className="font-semibold">Monocrystalline</span>
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="rounded-lg bg-gray-50 p-4">
+              <span className="font-semibold">Polycrystalline</span>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-2">
+          <ComparisonFeature
+            icon={<div className="h-5 w-5 text-blue-500" />}
+            title="Efficiency"
+            mono="15-22%"
+            poly="13-17%"
+          />
+          <ComparisonFeature
+            icon={<Coins className="h-5 w-5 text-yellow-500" />}
+            title="Cost"
+            mono="Higher"
+            poly="Lower"
+          />
+          <ComparisonFeature
+            icon={<ThermometerSun className="h-5 w-5 text-red-500" />}
+            title="Temperature Tolerance"
+            mono="Better"
+            poly="Good"
+          />
+          <ComparisonFeature
+            icon={<Clock className="h-5 w-5 text-green-500" />}
+            title="Lifespan"
+            mono="25-30 years"
+            poly="20-25 years"
+          />
+          <ComparisonFeature
+            icon={<Sparkles className="h-5 w-5 text-purple-500" />}
+            title="Appearance"
+            mono="Deep Black"
+            poly="Blue Hue"
+          />
+          <ComparisonFeature
+            icon={<Sun className="h-5 w-5 text-orange-500" />}
+            title="Space Efficiency"
+            mono="Higher"
+            poly="Lower"
+          />
+        </div>
+      </section>
+    </div>
   );
 }
 

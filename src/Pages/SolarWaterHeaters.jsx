@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import WaterHeaterHero from "../Components/SolarWaterHeaters/WaterHeaterHero";
 import WaterHeaterMain from "../Components/SolarWaterHeaters/WaterHeaterMain";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 function SolarWaterHeaters() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.section
       className="h-auto w-full"

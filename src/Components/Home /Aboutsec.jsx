@@ -1,5 +1,6 @@
 import SolarPanel from "../../assets/solar-installation2.webp";
 
+
 import factory from "../../assets/factory.webp";
 import Resident from "../../assets/solarization1.webp";
 import commercial from "../../assets/solarInstallation.webp";
@@ -43,10 +44,10 @@ function Aboutus() {
         </div>
         <div className="space-y-2 font-poppins text-xl sm:w-1/2">
           <p>
-            We are committed to helping Kenyans access affordable, reliable, and
-            clean energy through solar power solutions. Whether you're looking
-            to reduce electricity costs, power your business, or go completely
-            off-grid, we've got you covered.
+            SolarPointSystems E.A is committed to helping Kenyans access
+            affordable, reliable, and clean energy through solar power
+            solutions. Whether you're looking to reduce electricity costs, power
+            your business, or go completely off-grid, we've got you covered.
           </p>
           <AboutUsButton />
         </div>

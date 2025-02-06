@@ -19,6 +19,7 @@ import { lazy, Suspense } from "react";
 const ProjectsDetailsPage = lazy(() => import("./ProjectsDetailsPage"));
 const NoPage = lazy(() => import("../Pages/NoPage"));
 const OrderPage = lazy(() => import("../Pages/OrderPage"));
+import ScrollToTop from "./ScrollToTop";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence>
       <Suspense fallback={<Spinner />}>
+      <ScrollToTop />
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />

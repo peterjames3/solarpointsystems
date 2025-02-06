@@ -1,12 +1,16 @@
-import { Helmet } from 'react-helmet-async'
-import WaterPumpHero from "../Components/SolarWaterPump/WaterPumpHero"
-import WaterPumpmain from "../Components/SolarWaterPump/WaterPumpmain"
-import lorentzwaterpump from "../assets/lorentzwaterpump..webp"
-import groundfos from "../assets/grundfoswaterpump..webp"
-import roomnypumpwaterpump from "../assets/roomnypumpwaterpump..webp"
-import roomnypumpwaterpump1 from "../assets/roomnypumpwaterpump1..webp"
-import { motion } from "framer-motion"
+import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import WaterPumpHero from "../Components/SolarWaterPump/WaterPumpHero";
+import WaterPumpmain from "../Components/SolarWaterPump/WaterPumpmain";
+import lorentzwaterpump from "../assets/lorentzwaterpump..webp";
+import groundfos from "../assets/grundfoswaterpump..webp";
+import roomnypumpwaterpump from "../assets/roomnypumpwaterpump..webp";
+import roomnypumpwaterpump1 from "../assets/roomnypumpwaterpump1..webp";
+import { motion } from "framer-motion";
 function SolarWaterPump() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.section
       className="h-auto w-full bg-gray-100"
@@ -25,7 +29,7 @@ function SolarWaterPump() {
           content="solar water pumps | solarPointsystems"
         />
         <meta property="og:type" content="website" />
-   
+
         <link
           rel="canonical"
           href="https://solarpointsystemsea.co.ke/solarwaterpump"
@@ -152,7 +156,6 @@ function SolarWaterPump() {
       </section>
     </motion.section>
   );
-  
 }
 
-export default SolarWaterPump
+export default SolarWaterPump;

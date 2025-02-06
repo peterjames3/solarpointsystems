@@ -38,7 +38,7 @@ const WhyChooseSolar = () => {
 
           {/* Location-Based SEO */}
           <p className="mt-4 text-lg">
-            Looking for the <strong>best solar company in Kenya</strong>? We
+            Looking for the <strong> solar solutions in Kenya</strong>? We
             specialize in{" "}
             <strong>
               solar installations and other solar related solutions in Nairobi,
