@@ -22,7 +22,7 @@ function Aboutus() {
           About Us
         </h3>
         <hr className="w-[10rem] rounded border-b-[3px] border-textColor" />
-        <h4 className="text-center text-4xl font-medium">
+        <h4 className="text-center text-2xl font-medium">
           {" "}
           Best Solar Power Company in Kenya
         </h4>

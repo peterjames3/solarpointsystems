@@ -61,12 +61,13 @@ function OurSolutions() {
     },
   ];
   return (
-    <section className="mx-auto my-4 flex w-full flex-col space-y-5 px-2 md:px-3">
-      <div className="w-full space-y-3 text-center font-poppins">
+    <section className="mx-auto my-16 flex w-full flex-col space-y-5 px-2 md:px-3">
+      <div className="max-w-[1040px] mx-auto space-y-3 text-center font-poppins">
         <h3 className="text-3xl font-bold">Our Solar Power Solutions</h3>
         <hr className="mx-auto w-[12rem] rounded-md border-2 border-textColor" />
-        <h4 className="text-4xl font-medium">
-          Invest in your future with our solutions.
+        <h4 className="text-2xl font-medium">
+          
+          Discover our comprehensive range of solar solutions designed to meet your energy needs while promoting sustainability
         </h4>
       </div>
       <div className="wrapper grid grid-cols-1 grid-rows-3 gap-0 sm:grid-cols-3 sm:grid-rows-1 sm:gap-3 md:gap-8">

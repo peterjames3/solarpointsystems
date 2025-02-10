@@ -12,6 +12,7 @@ import unesco2 from "./assets/unesco2.webp";
 export default [
     {
         id: 1,
+        category: "Residential",
         title: "World Vision Kenya – Chesangich: Borehole Solarization Project",
         image: solarization1,
         content: "In 2023, Solarpoint System E.A. implemented a borehole solarization water pumping system at Chesangich, World Vision Kenya. This project used 15 solar panels and a 7.5 kW HANTI inverter to provide sustainable water access to the local community.",
@@ -26,6 +27,7 @@ export default [
     },
     {
         id: 2,
+        category: "Residential",
         title: "Solar Water Heater Installation for Homeowners in Nairobi",
         image: waterheater1,
         content: "In 2023, Solarpoint Systems E.A. installed solar water heaters for homeowners in Nairobi, providing a cost-effective and reliable solution for hot water amid rising electricity bills.",
@@ -40,6 +42,7 @@ export default [
     },
     {
         id: 3,
+        category: " Farming",
         title: "Loitoktok Solar Installation: Efficient Irrigation Solution",
         image: solarInstallation2,
         content: "In 2023, we installed a 6KVA solar system in Loitoktok that supports the irrigation of 20 acres of farmland. The system includes a customized solar pump with a 6.175 KWP capacity, delivering 3000 liters per hour for efficient agricultural irrigation.",
@@ -54,6 +57,7 @@ export default [
     },
     {
         id: 4,
+        category: "Commercial",
         title: "UNESCO Nairobi Office: Off-Grid Solar System Installation",
         image: Unesco,
         content: "In 2023, we supplied and installed a 5KWH off-grid solar system for the UNESCO offices in Nairobi, providing power for air conditioners, lighting, and office equipment. This project highlights our expertise in large-scale solar installations for institutional clients.",
@@ -68,6 +72,7 @@ export default [
     },
     {
         id: 5,
+        category: "Residential",
         title: "Repair and Upgrade of Solar Backup Systems for Enhanced Efficiency",
         image: repair2,
         content: "In 2023, we provided repair and upgrading services for solar backup systems, ensuring they meet current power demands and extend autonomy. This service is vital for optimizing solar investments and maintaining system efficiency.",

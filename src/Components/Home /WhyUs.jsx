@@ -57,7 +57,7 @@ const WhyUs = () => {
           className="mb-12 text-center"
         >
           <h2 className="mb-4 text-3xl font-bold">Why Choose Us</h2>
-          <p className="mx-auto max-w-2xl text-gray-600">
+          <p className="mx-auto max-w-2xl text-2xl font-medium  text-gray-600">
             We're committed to delivering exceptional solar solutions with
             expertise, quality, and outstanding customer service.
           </p>

@@ -55,7 +55,7 @@ function SolarSystem() {
         {systems.map((system, index) => (
           <div
             key={index}
-            className="flex h-[53rem] transform flex-col overflow-hidden rounded-md shadow-xl shadow-black duration-300 hover:scale-105"
+            className="flex h-[53rem] transform flex-col overflow-hidden rounded-md shadow-md shadow-black duration-300 hover:scale-105"
           >
             <div className="h-[20%] text-center">
               <h5 className="solar-heading bg-brandD py-3 font-poppins text-[2rem] font-medium leading-[3.5rem]">

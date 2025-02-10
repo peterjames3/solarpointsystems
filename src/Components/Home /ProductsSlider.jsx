@@ -31,13 +31,13 @@ const ComparisonFeature = ({ icon, title, mono, poly }) => (
 );
 function ProductsSlider() {
   return (
-    <div className="bg-cardBg">
+    <div className="my-16 bg-cardBg">
       <section className="mx-auto mt-0 flex max-w-[1000px] flex-col items-center space-y-3">
         <h3 className="pt-9 text-center font-poppins text-3xl font-bold text-black">
           Products
         </h3>
         <hr className="w-[10rem] rounded border-b-[3px] border-textColor" />
-        <h4 className="text-center font-poppins text-4xl font-medium">
+        <h4 className="text-center font-poppins text-2xl font-medium">
           SolarPointSystems EA – Powering Kenya with High-Performance Solar
           Panels & Accessories
         </h4>
