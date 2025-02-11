@@ -1,20 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import PropTypes from  'prop-types'
+import PropTypes from "prop-types";
 
-
-
-function ProductsItems({ id, img, name, desc, price }) {
+function ProductsItems({ id, img, name, desc, price, category }) {
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
-    navigate(`/products/${id}`, { state: { img, name, desc, price } });
+    const productNameForURL = name.toLowerCase().replace(/ /g, "-");
+    navigate(`/products/${productNameForURL}`, {
+      state: { img, name, desc, price, id, category },
+    });
   };
-
-
-
+  console.log("Product Details:", { id, category });
   return (
     <>
-   
       <section className="font-Inter mx-auto my-2 flex min-h-[35rem] max-w-5xl flex-col rounded-lg bg-cardBg">
         <div className="h-[60%] transform cursor-pointer duration-300 ease-in-out hover:scale-105">
           <img
@@ -44,10 +42,10 @@ function ProductsItems({ id, img, name, desc, price }) {
 }
 ProductsItems.propTypes = {
   id: PropTypes.number.isRequired,
-  name:PropTypes.string.isRequired,
-  desc:PropTypes.string.isRequired,
-  price:PropTypes.string.isRequired,
-  img:PropTypes.instanceOf(HTMLImageElement).isRequired,
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  img: PropTypes.instanceOf(HTMLImageElement).isRequired,
 };
 
 export default ProductsItems;

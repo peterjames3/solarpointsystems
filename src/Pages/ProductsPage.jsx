@@ -6,7 +6,7 @@ import BestSellingProducts from "../Components/BestSellingProducts";
 import ProductsItems from "../Components/ProductsItems";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import ProductsOnOffer from '../Components/ProductsOnOffer'
+import ProductsOnOffer from "../Components/ProductsOnOffer";
 
 function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -94,35 +94,10 @@ function ProductsPage() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Helmet>
-        <title>Our Products | SolarPointSystems E.A</title>
-        {/* SEO meta tags */}
-        <meta
-          name="description"
-          content="Discover the best solar solutions at SolarPointSystems E.A. Shop inverters, charge controllers, batteries, solar panels, and more. High-quality products for efficient energy solutions."
-        />
-        {/* Open Graph (OG) Tags for Social Sharing */}
-        <meta
-          property="og:title"
-          content="Our Products | SolarPointSystems E.A"
-        />
-        <meta
-          property="og:description"
-          content="Browse the top solar products at SolarPoint System. Find inverters, batteries, solar panels, and more for your renewable energy needs."
-        />
-        <meta
-          property="og:image"
-          content="/src/assets/2000w_TBB_inverter_charger..webp"
-        />
-        <meta
-          property="og:url"
-          content="https://solarpointsystemsea.co.ke/products"
-        />
-        
-      </Helmet>
+      <Helmet></Helmet>
 
       <ProductsIntro />
-     {/*  <ProductsOnOffer /> */}
+      {/*  <ProductsOnOffer /> */}
       <BestSellingProducts />
 
       {/* Search and Filter Section */}

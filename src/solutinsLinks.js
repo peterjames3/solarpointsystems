@@ -5,5 +5,6 @@ export  const solutionsLinks = [
         { name: "Solar Hybrid", path: "/solarhybrid" },
         { name: "Solar Water Heaters", path: "/solarwaterheaters" },
         { name: "Solar Water Purifiers", path: "/solarwaterpurifier" },
-        { name: "Solar Air Conditioner", path: "/solarairconditioner" }
+        { name: "Solar Air Conditioner", path: "/solarairconditioner" },
+        { name: "Solar Installation", path: '/solarinstallation'}
     ];
