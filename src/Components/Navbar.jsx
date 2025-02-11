@@ -75,8 +75,8 @@ const Navbar = () => {
       } border-b border-slate-700`}
     >
       {/* Top Bar */}
-      <address className="bg-green mx-auto hidden max-w-[1400px] items-center justify-between px-2 pb-5 text-white sm:flex">
-        <div className="items-center gap-7 sm:flex">
+      <address className="bg-green mx-auto flex max-w-[1400px] items-center justify-between px-2 pb-5 text-white">
+        <div className="flex items-center gap-7">
           <nav className="flex items-center gap-1 text-[.95rem] md:text-[1.1rem]">
             <MdOutlineEmail className="text-secondaryBg" />{" "}
             <span>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <MdAccessTime className="text-secondaryBg" />
             <span>Mon - Fri: 9:30 AM - 5:30 PM </span>
           </nav>
-          <nav className="hidden items-center gap-1 text-[.95rem] ss:flex md:text-[1.1rem]">
+          <nav className="flex items-center gap-1 text-[.95rem] md:text-[1.1rem]">
             <MdOutlinePhone className="text-secondaryBg" />
             <span>
               <a href="tel:+254 703704062">+254 703704062</a>{" "}
@@ -97,7 +97,7 @@ const Navbar = () => {
           </nav>
         </div>
         {/*Social Links */}
-        <div className="flex items-center gap-4">
+        <div className="hidden items-center gap-4 sm:flex">
           <div className="text-[.95rem] md:text-[1.1rem]">Follow on:</div>
           {socials.map((link, index) => (
             <a
