@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import QuotationModal from "../QuotationModal";
 import { Calculator, Sun, Zap, ArrowRight, Info } from "lucide-react";
 
+
 const SavingsCalculator = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [monthlyBill, setMonthlyBill] = useState("");

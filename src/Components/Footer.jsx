@@ -170,6 +170,11 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="py-2 text-sm">
+                  <Link to="/solarinstallation" className="hover:underline">
+                    Solar installation
+                  </Link>
+                </li>
+                <li className="py-2 text-sm">
                   <Link to="/solutions" className="hover:underline">
                     Solar LEDs
                   </Link>

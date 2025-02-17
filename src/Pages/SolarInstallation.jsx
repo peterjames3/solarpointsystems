@@ -11,6 +11,7 @@ import TechnicalSpecification from "../Components/SolarInstallation/TechnicalSpe
 import Testimonials from "../Components/SolarInstallation/Testimonials";
 import SavingsCalculator from "../Components/SolarInstallation/SavingsCalculator";
 import CTA from "../Components/SolarInstallation/CTA";
+import { MaintenanceServices } from "../Components/SolarInstallation/MaintenanceService";
 import AccordionSection from "../Components/SolarInstallation/AccorionSection";
 import { Helmet } from "react-helmet-async";
 
@@ -54,6 +55,7 @@ function SolarInstallation() {
       <ServicesOfferings />
       <InstallationProcess />
       <DevicesAndGadgets />
+      <MaintenanceServices />
       <TechnicalSpecification />
       <Testimonials />
       <SavingsCalculator />

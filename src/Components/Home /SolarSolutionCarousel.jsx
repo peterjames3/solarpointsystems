@@ -108,7 +108,7 @@ export const SolarSolutionCarousel = () => {
         <div className="flex items-center">
           <button
             onClick={prevSlide}
-            className="absolute left-0 z-10 rounded-full bg-green-700 p-2 text-white transition-colors hover:bg-green-800"
+            className="z-4 absolute left-0 rounded-full bg-green-700 p-2 text-white transition-colors hover:bg-green-800"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
@@ -165,7 +165,7 @@ export const SolarSolutionCarousel = () => {
           </div>
           <button
             onClick={nextSlide}
-            className="absolute right-0 z-10 rounded-full bg-green-700 p-2 text-white transition-colors hover:bg-green-800"
+            className="z-4 absolute right-0 rounded-full bg-green-700 p-2 text-white transition-colors hover:bg-green-800"
           >
             <ChevronRight className="size-6" />
           </button>

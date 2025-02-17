@@ -13,6 +13,7 @@ import ResidentialSolar from "../../assets/residential solar installation in ken
 import CommercialSolar from "../../assets/commercial solar installation.webp";
 import PowerStorage from "../../assets/power storage solution inkenya.webp";
 import SolarMaintenance from "../../assets/solar panel maintenance on going.webp";
+import Call from "./Call";
 const ServiceCard = ({ title, description, icon: Icon, image, features }) => (
   <div className="overflow-hidden rounded-xl bg-white transition-all duration-300 hover:shadow-xl">
     <div className="relative h-48">
@@ -35,6 +36,7 @@ const ServiceCard = ({ title, description, icon: Icon, image, features }) => (
           </li>
         ))}
       </ul>
+      <Call />
     </div>
   </div>
 );

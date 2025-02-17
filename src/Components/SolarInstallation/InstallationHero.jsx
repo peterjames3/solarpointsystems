@@ -14,11 +14,11 @@ const InstallationHero = () => {
         <header className="absolute left-1/2 top-[60%] max-w-[1100px] -translate-x-1/2 -translate-y-1/2 space-y-4 text-center text-white transition">
           <h2 className="font-body py-2 font-semibold xxs:text-2xl xs:text-3xl sm:text-5xl">
             {" "}
-            Get Professional Solar Installation Services
+            Get Professional  & Affordable Solar Installation & Maintenance services in Kenya 
           </h2>
-          <p>Solution / Solar Installation</p>
+          <p>Solution / Solar Installation and maintenance</p>
           <p className="mb-8 text-xl sm:text-3xl">
-            We design, supply and install solar energy systems for homes,
+            We design, supply, maintain,  and install solar energy systems for homes,
             businesses Ngos and Government institutions.
           </p>
         </header>

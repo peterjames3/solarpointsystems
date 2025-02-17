@@ -12,7 +12,7 @@ const Benefits = () => {
     <>
       <div className="bg-white rounded-xl p-8 mb-12">
         <h3 className="text-2xl font-bold mb-8 text-center">
-          Benefits of Switching to Solar Power in Kenya
+          Benefits of Switching to Solar Power 
         </h3>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">

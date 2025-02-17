@@ -14,7 +14,7 @@ function Solutionsbtn() {
       onClick={handleClick}
       type="button"
       aria-label="Contact us"
-      className="btn--primary"
+      className="inline-flex items-center gap-2 rounded-lg bg-green-700 px-6 py-3 text-xl font-medium text-white transition-colors hover:bg-green-800"
     >
       Our Solutions
     </button>

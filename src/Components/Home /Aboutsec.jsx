@@ -1,12 +1,9 @@
 import SolarPanel from "../../assets/solar-installation2.webp";
 
-
 import factory from "../../assets/factory.webp";
 import Resident from "../../assets/solarization1.webp";
 import commercial from "../../assets/solarInstallation.webp";
 import { CiCircleCheck } from "react-icons/ci";
-
-import AboutUsButton from "../AboutUsButton";
 
 import "aos/dist/aos.css";
 
@@ -49,7 +46,6 @@ function Aboutus() {
             solutions. Whether you're looking to reduce electricity costs, power
             your business, or go completely off-grid, we've got you covered.
           </p>
-          <AboutUsButton />
         </div>
       </div>
 

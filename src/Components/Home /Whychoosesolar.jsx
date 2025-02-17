@@ -1,7 +1,7 @@
 import ContactUsButton from "../ContactUsButton";
 const WhyChooseSolar = () => {
   return (
-    <section className="w-full">
+    <section className=" bg-gray-50 w-full">
       <div className="wrapper flex flex-col gap-4 md:my-20 md:flex-row md:px-10">
         {/* Heading Section */}
         <div className="px-5 py-4 font-semibold md:w-[40%] md:px-10 md:text-start">

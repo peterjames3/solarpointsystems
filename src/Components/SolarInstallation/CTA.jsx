@@ -4,7 +4,9 @@ const CTA = () => {
   return (
     <section className="bg-brandC py-16 text-white">
       <div className="wrapper mx-auto px-4 text-center">
-        <h2 className="mb-6 text-3xl font-bold">Ready to Switch to Solar?</h2>
+        <h2 className="mb-6 text-3xl font-bold">
+          Ready to Switch to Solar or in need of solar maintenance?
+        </h2>
         <p className="mx-auto mb-8 max-w-2xl text-xl">
           Contact us today for a free consultation and quote. Start your journey
           towards energy independence.
@@ -19,7 +21,6 @@ const CTA = () => {
             <a href="mailto:solarpointsystems1@gmail.com">
               solarpointsystems1@gmail.com
             </a>
-            
           </button>
         </address>
       </div>

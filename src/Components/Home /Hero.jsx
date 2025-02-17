@@ -33,13 +33,13 @@ function Hero() {
           className="h-full w-full flex-shrink-0 object-cover mix-blend-overlay"
         />
 
-        <div className="absolute left-[1.5%] top-[20%] max-w-[1100px] space-y-4 py-4 pl-8 xs:left-[5%] ss:left-[3%] ss:top-[25%] sm:left-[12%] sm:space-y-5 xl:left-[11.5%] xl:pl-12">
+        <div className="absolute left-[1.5%] top-[20%] max-w-[1100px] space-y-4 py-4 pl-2 xs:left-[5%] ss:left-[3%] ss:top-[25%] sm:left-[12%] sm:space-y-5 xl:left-[11.5%] xl:pl-12">
           <div className="h-full w-full space-y-6 px-3 sm:space-y-9 sm:px-0">
-            <h1 className="font-body py-2 font-semibold text-brandC xxs:text-3xl xs:text-5xl sm:text-5xl md:text-6xl">
+            <h1 className="font-body py-2 text-center font-semibold text-brandC xxs:text-3xl xs:text-5xl sm:text-start sm:text-5xl md:text-6xl">
               Affordable Solar Installation & Solar Solutions in Kenya
             </h1>
 
-            <h2 className="font-Rubik font-medium text-white xxs:text-xl xs:text-2xl">
+            <h2 className="text-center font-Rubik font-medium text-white xxs:text-xl xs:text-2xl sm:text-start">
               We empower homeowners and businesses with expert solar
               installation, reliable maintenance, and trusted consultancy.
               Together, we create sustainable energy solutions that save you
@@ -49,13 +49,13 @@ function Hero() {
               Leading Provider of{" "}
               <span className="text-brandC">{typeEffect}</span> solutions
             </p>
-            <div className="flex justify-start gap-6">
-              <AboutUsButton
+            <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:justify-start sm:gap-6 sm:space-y-0">
+              <Solutionsbtn
                 data-aos="fade-left"
                 data-aos-delay="1200"
                 data-aos-offset="50"
               />
-              <Solutionsbtn
+              <AboutUsButton
                 data-aos="fade-left"
                 data-aos-delay="1200"
                 data-aos-offset="50"

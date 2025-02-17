@@ -86,7 +86,7 @@ export const DevicesAndGadgets = () => {
       <div className="wrapper mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold">
-            Essential Devices and Equipment
+            Some Essential Devices and Equipment required in solar Installation
           </h2>
           <p className="mx-auto max-w-2xl text-gray-600">
             Discover the high-quality devices and equipment we use to ensure
@@ -112,7 +112,7 @@ export const DevicesAndGadgets = () => {
             ))}
           </div>
           <div className="rounded-2xl bg-gray-50 p-6 md:col-span-2">
-            <div className="relative mb-6 h-[18rem] overflow-hidden rounded-xl">
+            <div className="relative mb-6 h-[22rem] overflow-hidden rounded-xl">
               <img
                 src={categories[activeCategory].image}
                 alt={categories[activeCategory].title}
