@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import WaterPumpHero from "../Components/SolarWaterPump/WaterPumpHero";
 import WaterPumpmain from "../Components/SolarWaterPump/WaterPumpmain";
+import UseCasesSection from "../Components/SolarWaterPump/UseCasesSection";
+import MaintenanceServices from "../Components/SolarWaterPump/MaintenanceServices";
+import SolutionsSection from "../Components/SolarWaterPump/SolutionsSection";
+import ProductsSection from "../Components/SolarWaterPump/ProductsSection";
 import lorentzwaterpump from "../assets/lorentzwaterpump..webp";
 import groundfos from "../assets/grundfoswaterpump..webp";
 import roomnypumpwaterpump from "../assets/roomnypumpwaterpump..webp";
@@ -126,8 +130,12 @@ function SolarWaterPump() {
       {/* Inject JSON-LD Schema */}
       <JsonLd schema={solarWaterPumpSchema} />
       <WaterPumpHero />
+      <MaintenanceServices />
       <WaterPumpmain />
-      <section className="w-full py-7 ss:mt-[10rem] sm:mt-[5rem]">
+      <SolutionsSection />
+      <ProductsSection />
+      <UseCasesSection />
+      {/* <section className="w-full py-7 ss:mt-[10rem] sm:mt-[5rem]">
         <div className="flex w-full flex-col items-center space-y-3 pb-4 font-poppins">
           <h3 className="font-Poppins pt-9 text-center text-3xl font-semibold text-black">
             Types of Solar Pump
@@ -243,7 +251,7 @@ function SolarWaterPump() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </motion.section>
   );
 }
