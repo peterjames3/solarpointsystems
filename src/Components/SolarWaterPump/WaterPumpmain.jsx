@@ -10,9 +10,7 @@ function WaterPumpmain() {
     <section className="my-5 h-auto overflow-y-scroll py-20">
       <div className="wrapper sx:flex-col flex flex-col rounded-lg bg-white px-5 py-3 shadow-lg ss:flex-row md:flex-row md:gap-5 md:px-7">
         <div
-          data-aos="fade-right"
-          data-aos-delay="1200"
-          data-aos-offset="50"
+         
           className="relative h-[32rem] w-full overflow-hidden rounded-md bg-gradient-to-r from-slate-800 to-gray-500 ss:h-auto md:h-[32rem] md:w-[50%]"
         >
           <img
@@ -31,9 +29,7 @@ function WaterPumpmain() {
           </div>
         </div>
         <div
-          data-aos="fade-left"
-          data-aos-delay="1200"
-          data-aos-offset="50"
+        
           className="font-Poppins animate-puls w-full px-2 py-2 ss:space-y-2 md:w-[50%] md:space-y-4 md:px-3"
         >
           <h2 className="pt-2 font-poppins text-3xl font-bold text-black">
@@ -98,9 +94,7 @@ function WaterPumpmain() {
         </div>
         <div className="font-Inter mt-10 grid grid-cols-1 grid-rows-4 gap-0 ss:grid-cols-2 ss:grid-rows-2">
           <div
-            data-aos="fade-right"
-            data-aos-delay="1200"
-            data-aos-offset="50"
+         
             className="h-auto w-full md:h-[35rem]"
           >
             <img
@@ -111,9 +105,7 @@ function WaterPumpmain() {
             />
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-delay="1200"
-            data-aos-offset="50"
+           
             className="h-[35rem] space-x-2 space-y-3 py-5 font-Rubik text-xl"
           >
             <p>
@@ -136,9 +128,7 @@ function WaterPumpmain() {
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="1200"
-            data-aos-offset="50"
+          
             className="h-[35rem] space-x-2 space-y-3 py-5 text-xl"
           >
             <h6 className="font-medium"> 2). Water pump motor</h6>
@@ -168,9 +158,7 @@ function WaterPumpmain() {
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="1200"
-            data-aos-offset="50"
+           
             className="md:h-[40rem]"
           >
             <img

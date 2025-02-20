@@ -131,10 +131,10 @@ const MaintenanceServices = () => {
                 <div
                   className={`overflow-hidden transition-all duration-300 ${expandedService === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
                 >
-                  <ul className="mt-4 space-y-2 border-t border-amber-200 pt-4">
+                  <ul className="mt-4 space-y-2 border-t  pt-4">
                     {service.details.map((detail, idx) => (
                       <li key={idx} className="flex items-center text-gray-700">
-                        <div className="mr-2 h-2 w-2 rounded-full bg-amber-600"></div>
+                        <div className="mr-2 h-2 w-2 rounded-full bg-green-600"></div>
                         {detail}
                       </li>
                     ))}

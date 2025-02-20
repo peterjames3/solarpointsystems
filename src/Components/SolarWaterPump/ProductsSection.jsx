@@ -141,7 +141,7 @@ const ProductsSection = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`rounded-full px-4 py-2 transition-all duration-300 ${selectedCategory === category.id ? "bg-amber-600 text-white" : "bg-white text-gray-700 hover:bg-amber-50"}`}
+              className={`rounded-full px-4 py-2 transition-all duration-300 ${selectedCategory === category.id ? "bg-green-600 text-white" : "bg-white text-gray-700 hover:bg-green-50"}`}
             >
               {category.name}
             </button>
@@ -172,7 +172,7 @@ const ProductsSection = () => {
                     </h3>
                     <p className="text-gray-600">{product.description}</p>
                   </div>
-                  <div className="text-xl font-bold text-amber-600">
+                  <div className="text-xl font-bold text-green-600">
                     KES {product.price.toLocaleString()}
                   </div>
                 </div>
@@ -182,12 +182,12 @@ const ProductsSection = () => {
                     setExpandedProduct(expandedProduct === index ? null : index)
                   }
                 >
-                  <div className="mb-2 flex items-center gap-2 font-semibold text-amber-600">
+                  <div className="mb-2 flex items-center gap-2 font-semibold text-green-600">
                     View Details
                     {expandedProduct === index ? (
-                      <ChevronUp className="h-4 w-4" />
+                      <ChevronUp className="size-4" />
                     ) : (
-                      <ChevronDown className="h-4 w-4" />
+                      <ChevronDown className="size-4" />
                     )}
                   </div>
                   <div
@@ -204,7 +204,7 @@ const ProductsSection = () => {
                               key={idx}
                               className="flex items-center text-gray-600"
                             >
-                              <Check className="mr-2 h-4 w-4 text-amber-600" />
+                              <Check className="mr-2 size-4 text-green-600" />
                               {spec}
                             </li>
                           ))}
@@ -220,7 +220,7 @@ const ProductsSection = () => {
                               key={idx}
                               className="flex items-center text-gray-600"
                             >
-                              <Check className="mr-2 h-4 w-4 text-amber-600" />
+                              <Check className="mr-2 size-4 text-green-600" />
                               {feature}
                             </li>
                           ))}
@@ -230,11 +230,11 @@ const ProductsSection = () => {
                   </div>
                 </div>
                 <div className="mt-6 flex gap-4">
-                  <button className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-amber-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-amber-700">
+                  <button className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-green-700">
                     <ShoppingCart className="h-5 w-5" />
                     Order Now
                   </button>
-                  <button className="flex-1 rounded-lg border-2 border-amber-600 px-4 py-2 text-amber-600 transition-colors duration-300 hover:bg-amber-50">
+                  <button className="flex-1 rounded-lg border-2 border-green-600 px-4 py-2 text-green-600 transition-colors duration-300 hover:bg-green-50">
                     Request Quote
                   </button>
                 </div>

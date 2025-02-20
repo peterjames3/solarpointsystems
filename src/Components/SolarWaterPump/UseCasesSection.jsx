@@ -8,11 +8,12 @@ import {
   Hotel,
   ArrowRight,
 } from "lucide-react";
+import Community from "../../assets/ Image of a solar water pump on a Kenyan farm actively irrigating crops.webp";
 const UseCasesSection = () => {
   const useCases = [
     {
       title: "Farm Irrigation",
-      icon: <Sprout className="h-8 w-8 text-amber-600" />,
+      icon: <Sprout className="size-8 text-green-600" />,
       image:
         "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description:
@@ -26,7 +27,7 @@ const UseCasesSection = () => {
     },
     {
       title: "Livestock Water Supply",
-      icon: <Droplet className="h-8 w-8 text-amber-600" />,
+      icon: <Droplet className="size-8 text-green-600" />,
       image:
         "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description:
@@ -40,7 +41,7 @@ const UseCasesSection = () => {
     },
     {
       title: "Domestic Water Supply",
-      icon: <Home className="h-8 w-8 text-amber-600" />,
+      icon: <Home className="size-8 text-green-600" />,
       image:
         "https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Never worry about water shortages in your home again.",
@@ -53,7 +54,7 @@ const UseCasesSection = () => {
     },
     {
       title: "Commercial Properties",
-      icon: <Building className="h-8 w-8 text-amber-600" />,
+      icon: <Building className="size-8 text-green-600" />,
       image:
         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description:
@@ -67,9 +68,9 @@ const UseCasesSection = () => {
     },
     {
       title: "Community Projects",
-      icon: <Users className="h-8 w-8 text-amber-600" />,
+      icon: <Users className="size-8 text-green-600" />,
       image:
-        "https://images.unsplash.com/photo-1541023574375-37451c7c4bd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        Community,
       description:
         "Empower communities with sustainable water access solutions.",
       benefits: [
@@ -81,7 +82,7 @@ const UseCasesSection = () => {
     },
     {
       title: "Hotels & Resorts",
-      icon: <Hotel className="h-8 w-8 text-amber-600" />,
+      icon: <Hotel className="size-8 text-green-600" />,
       image:
         "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description:
@@ -131,14 +132,12 @@ const UseCasesSection = () => {
                 <ul className="mb-6 space-y-2">
                   {useCase.benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-center text-gray-700">
-                      <div className="mr-2 h-2 w-2 rounded-full bg-amber-600"></div>
+                      <div className="mr-2 size-2 rounded-full bg-green-600"></div>
                       {benefit}
                     </li>
                   ))}
                 </ul>
-                <button className="flex items-center gap-2 font-semibold text-amber-600 transition-all duration-300 hover:gap-3">
-                  Learn More <ArrowRight className="h-5 w-5" />
-                </button>
+              
               </div>
             </div>
           ))}
@@ -149,7 +148,7 @@ const UseCasesSection = () => {
             find the perfect match.
           </p>
           <button className="mx-auto flex items-center gap-2 rounded-lg bg-amber-600 px-8 py-3 font-semibold text-white transition-colors duration-300 hover:bg-amber-700">
-            Schedule a Consultation <ArrowRight className="h-5 w-5" />
+            Schedule a Consultation <ArrowRight className="size-5" />
           </button>
         </div>
       </div>
