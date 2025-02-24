@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import WaterHeaterHero from "../Components/SolarWaterHeaters/WaterHeaterHero";
 import JsonLd from "../Components/JsonLd";
 import WhyInstallationService from "../Components/SolarInstallation/WhyInstallationService";
 import ServicesOfferings from "../Components/SolarInstallation/ServicesOfferings";
@@ -11,7 +10,7 @@ import TechnicalSpecification from "../Components/SolarInstallation/TechnicalSpe
 import Testimonials from "../Components/SolarInstallation/Testimonials";
 import SavingsCalculator from "../Components/SolarInstallation/SavingsCalculator";
 import CTA from "../Components/SolarInstallation/CTA";
-import { MaintenanceServices } from "../Components/SolarInstallation/MaintenanceService";
+import MaintenanceService from "../Components/SolarInstallation/MaintenanceService";
 import AccordionSection from "../Components/SolarInstallation/AccorionSection";
 import { Helmet } from "react-helmet-async";
 
@@ -214,7 +213,7 @@ function SolarInstallation() {
       <ServicesOfferings />
       <InstallationProcess />
       <DevicesAndGadgets />
-      <MaintenanceServices />
+      <MaintenanceService />
       <TechnicalSpecification />
       <Testimonials />
       <SavingsCalculator />

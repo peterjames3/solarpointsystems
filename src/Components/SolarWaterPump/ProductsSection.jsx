@@ -7,6 +7,11 @@ import {
   ChevronUp,
   Check,
 } from "lucide-react";
+import Lorentz from "../../assets/lorentzwaterpump..webp";
+import Grundfos from "../../assets/Grundfos.jpeg";
+import sunpower from "../../assets/sds-d-128-320x320.jpg";
+import hybrid from "../../assets/hybrid-water-pump.webp";
+import { Helmet } from "react-helmet-async";
 const ProductsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [expandedProduct, setExpandedProduct] = useState("");
@@ -33,13 +38,13 @@ const ProductsSection = () => {
       name: "Hybrid Pumps",
     },
   ];
+
   const products = [
     {
       id: 1,
       name: "LorentzPS2-150 C-SJ5-8",
       category: "submersible",
-      image:
-        "https://images.unsplash.com/photo-1626808642875-0aa545482acf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: Lorentz,
       price: 75000,
       description: "Submersible solar pump for deep wells and boreholes",
       specifications: [
@@ -54,13 +59,14 @@ const ProductsSection = () => {
         "Maintenance-free design",
         "Stainless steel construction",
       ],
+      brand: "Lorentz",
+      availability: "InStock",
     },
     {
       id: 2,
       name: "Grundfos SQFlex 2.5-2",
       category: "surface",
-      image:
-        "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: Grundfos,
       price: 120000,
       description: "Surface mounted solar pump for irrigation and water supply",
       specifications: [
@@ -75,13 +81,14 @@ const ProductsSection = () => {
         "Weather-resistant housing",
         "Easy installation",
       ],
+      brand: "Grundfos",
+      availability: "InStock",
     },
     {
       id: 3,
       name: "SunPumps SDS D-128",
       category: "dc",
-      image:
-        "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: sunpower,
       price: 45000,
       description: "Direct current pump for small-scale irrigation",
       specifications: [
@@ -96,13 +103,14 @@ const ProductsSection = () => {
         "Portable system",
         "Ideal for small farms",
       ],
+      brand: "SunPumps",
+      availability: "LimitedAvailability",
     },
     {
       id: 4,
       name: "Hybrid Pro HP-2200",
       category: "hybrid",
-      image:
-        "https://images.unsplash.com/photo-1559302504-64aae6ca6b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: hybrid,
       price: 150000,
       description: "Advanced hybrid solar pump system with grid backup",
       specifications: [
@@ -117,14 +125,46 @@ const ProductsSection = () => {
         "Remote monitoring",
         "Professional installation",
       ],
+      brand: "Hybrid Pro",
+      availability: "PreOrder",
     },
   ];
+
   const filteredProducts =
     selectedCategory === "all"
       ? products
       : products.filter((product) => product.category === selectedCategory);
+
+  const generateProductSchema = (product) => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: product.image,
+    description: product.description,
+    brand: product.brand,
+    priceCurrency: "Ksh",
+    price: product.price,
+    availability: product.availability,
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "Ksh",
+      price: product.price,
+      itemCondition: "http://schema.org/NewCondition",
+      availability: `https://schema.org/${product.availability}`,
+      seller: {
+        "@type": "Organization",
+        name: product.brand,
+      },
+    },
+  });
   return (
     <section className="w-full bg-[#ecf4f0] py-16">
+      {/* Inject Schema Markup */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(generateProductSchema)}
+        </script>
+      </Helmet>
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
@@ -158,10 +198,10 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-cover"
+                  className="object-fit h-full w-full"
                 />
                 <button className="absolute right-4 top-4 rounded-full bg-white p-2 transition-colors duration-300 hover:bg-gray-100">
-                  <Heart className="h-5 w-5 text-gray-600" />
+                  <Heart className="size-5 text-gray-600" />
                 </button>
               </div>
               <div className="p-6">
@@ -229,15 +269,15 @@ const ProductsSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-6 flex gap-4">
+                {/* <div className="mt-6 flex gap-4">
                   <button className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-green-700">
-                    <ShoppingCart className="h-5 w-5" />
+                    <ShoppingCart className="size-5" />
                     Order Now
                   </button>
                   <button className="flex-1 rounded-lg border-2 border-green-600 px-4 py-2 text-green-600 transition-colors duration-300 hover:bg-green-50">
                     Request Quote
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

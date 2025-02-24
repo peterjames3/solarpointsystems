@@ -142,15 +142,7 @@ const UseCasesSection = () => {
             </div>
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <p className="mb-6 text-lg text-gray-600">
-            Not sure which solution fits your needs? Let our experts help you
-            find the perfect match.
-          </p>
-          <button className="mx-auto flex items-center gap-2 rounded-lg bg-amber-600 px-8 py-3 font-semibold text-white transition-colors duration-300 hover:bg-amber-700">
-            Schedule a Consultation <ArrowRight className="size-5" />
-          </button>
-        </div>
+    
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ import Projects from "../Pages/Projects";
 import PowerBackup from "../Pages/PowerBackup";
 import SolarHybrid from "../Pages/SolarHybrid";
 import SolarWaterHeaters from "../Pages/SolarWaterHeaters";
-import SolarWaterPump from "../Pages/SolarWaterPump";
+import SolarWaterPumpsSoultions from "../Pages/SolarWaterPumpsSolutions";
 import SolarAirConditioner from "../Pages/SolarAirConditioner";
 import SolarWaterPurifier from "../Pages/SolarWaterPurifier";
 import SolarInstallation from "../Pages/SolarInstallation";
@@ -48,7 +48,10 @@ const AnimatedRoutes = () => {
             element={<SolarAirConditioner />}
           />
           <Route path="/solarwaterpurifier" element={<SolarWaterPurifier />} />
-          <Route path="/solarwaterpump" element={<SolarWaterPump />} />
+          <Route
+            path="/solarwaterpumpssolutions"
+            element={<SolarWaterPumpsSoultions />}
+          />
           <Route path="/solarinstallation" element={<SolarInstallation />} />
           <Route path="*" element={<NoPage />} />
         </Routes>

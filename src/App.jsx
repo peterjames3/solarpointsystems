@@ -8,7 +8,7 @@ import ScrollToTopButton from "./Components/ScrollToTopButton";
 import Whatapp from "./Components/Whatapp";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { HelmetProvider } from "react-helmet-async";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -26,6 +26,7 @@ function App() {
   }, []);
 
   return (
+    <HelmetProvider>
     <Router>
       <div>
         {isLoading ? (
@@ -43,6 +44,7 @@ function App() {
         )}
       </div>
     </Router>
+    </HelmetProvider>
   );
 }
 

@@ -3,7 +3,7 @@ import Dc from "../../assets/dc1-water-pump.webp";
 import surfacePump from "../../assets/solar-surface-pump-1.jpg";
 import submersible from "../../assets/surfacepump.jpeg";
 import hybrid from "../../assets/hybrid-water-pump.webp";
-
+import { Helmet } from 'react-helmet-async';
 const SolutionsSection = () => {
   const pumpTypes = [
     {
@@ -78,8 +78,44 @@ const SolutionsSection = () => {
         "Robust mounting system to secure solar panels with anti-theft features.",
     },
   ];
+
+  const generatePumpSchema = (pump) => ({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: pump.title,
+    description: pump.description,
+    image: pump.image,
+    brand: {
+      "@type": "Brand",
+      name: "SolarPointSystemsE.A",
+    },
+    features: pump.features,
+  });
+  const generateKitSchema = (component) => ({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: component.title,
+    description: component.description,
+    brand: {
+      "@type": "Brand",
+      name: "SolarPointSystemsE.A",
+    },
+  });
+
   return (
     <section className="w-full bg-[#ecf4f0] py-16">
+      <Helmet>
+        {pumpTypes.map((pump, index) => (
+          <script key={`pump-${index}`} type="application/ld+json">
+            {JSON.stringify(generatePumpSchema(pump))}
+          </script>
+        ))}
+        {kitComponents.map((component, index) => (
+          <script key={`kit-${index}`} type="application/ld+json">
+            {JSON.stringify(generateKitSchema(component))}
+          </script>
+        ))}
+      </Helmet>
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="mb-16 text-center text-3xl font-bold text-gray-900 md:text-4xl">
           Our Solar Water Pump Solutions
@@ -151,12 +187,11 @@ const SolutionsSection = () => {
                   comprehensive warranty coverage
                 </p>
               </div>
-              
-              <button className=" flex items-center gap-2 rounded-lg bg-white px-8 py-3 text-green-700 transition-colors hover:bg-gray-100">
+
+              <button className="flex items-center gap-2 rounded-lg bg-white px-8 py-3 text-green-700 transition-colors hover:bg-gray-100">
                 <Phone className="size-5" />
                 <a href="tel:+254 703704062"> +254 703704062 </a>
               </button>
-
             </div>
           </div>
         </div>

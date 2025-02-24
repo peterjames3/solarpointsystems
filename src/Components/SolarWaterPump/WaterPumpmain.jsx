@@ -92,7 +92,7 @@ function WaterPumpmain() {
             Working Principle
           </h5>
         </div>
-        <div className="font-Inter mt-10 grid grid-cols-1 grid-rows-4 gap-0 ss:grid-cols-2 ss:grid-rows-2">
+        <div className="font-Inter mt-10 grid grid-cols-1 grid-rows-4 gap-3 ss:grid-cols-2 ss:grid-rows-2">
           <div
          
             className="h-auto w-full md:h-[35rem]"
@@ -101,7 +101,7 @@ function WaterPumpmain() {
               src={IsometricDiagram}
               alt="isometric diagram"
               loading="lazy"
-              className="object-fit h-full w-full mix-blend-overlay"
+              className="object-fit h-full w-full "
             />
           </div>
           <div

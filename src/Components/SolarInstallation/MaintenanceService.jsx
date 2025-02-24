@@ -10,7 +10,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
-export const MaintenanceServices = () => {
+const MaintenanceService = () => {
   const [expandedService, setExpandedService] = useState("number");
   const navigate = useNavigate();
   const handleClick = () => {
@@ -157,3 +157,5 @@ export const MaintenanceServices = () => {
     </section>
   );
 };
+
+export default MaintenanceService;
