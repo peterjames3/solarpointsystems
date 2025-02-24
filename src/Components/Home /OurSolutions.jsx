@@ -60,53 +60,84 @@ function OurSolutions() {
       Link: "/solarhybrid",
     },
   ];
+
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Our Solar Power Solutions",
+    description:
+      "Discover our comprehensive range of solar solutions designed to meet your energy needs while promoting sustainability.",
+    itemListElement: Solutions.map((solution, index) => ({
+      "@type": "Service",
+      name: solution.title,
+      description: solution.description,
+      serviceType: solution.title,
+      image: solution.imageUrl,
+      url: solution.Link,
+      position: index + 1,
+    })),
+  };
+
   return (
-    <section className="mx-auto my-16 flex w-full flex-col space-y-5 px-2 md:px-3">
-      <div className="mx-auto max-w-[1040px] space-y-3 text-center font-poppins">
-        <h3 className="text-3xl font-bold">Our Solar Power Solutions</h3>
-        <hr className="mx-auto w-[12rem] rounded-md border-2 border-textColor" />
-        <h4 className="text-2xl font-medium">
-          Discover our comprehensive range of solar solutions designed to meet
-          your energy needs while promoting sustainability
-        </h4>
-      </div>
-      <div className="wrapper grid grid-cols-1 grid-rows-3 gap-0 sm:grid-cols-3 sm:grid-rows-1 sm:gap-3 md:gap-8">
-        <div className="bg grid grid-cols-1 gap-6">
-          {Solutions.slice(0, 3).map((solution, index) => (
-            <OurSolutionCard
-              key={index}
-              title={solution.title}
-              description={solution.description}
-              icon={solution.icon}
-              imageUrl={solution.imageUrl}
-              link={solution.Link}
-            />
-          ))}
-        </div>
+    <>
+      <Helmet>
+        <title>Our Solar Power Solutions - Sustainable Energy</title>
+        <meta
+          name="description"
+          content="Explore our range of solar solutions including installation, water heating, air conditioning, and maintenance services."
+        />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      </Helmet>
 
-        <div className="w-full overflow-hidden rounded-lg">
-          <img
-            src={SolarDesign}
-            alt="Solar System"
-            className="h-full max-h-[45rem] w-full object-fill object-center sm:max-h-[50rem]"
-            loading="lazy"
-          />
+      <section className="mx-auto my-16 flex w-full flex-col space-y-5 px-2 md:px-3">
+        <div className="mx-auto max-w-[1040px] space-y-3 text-center font-poppins">
+          <h3 className="text-3xl font-bold">Our Solar Power Solutions</h3>
+          <hr className="mx-auto w-[12rem] rounded-md border-2 border-textColor" />
+          <h4 className="text-2xl font-medium">
+            Discover our comprehensive range of solar solutions designed to meet
+            your energy needs while promoting sustainability
+          </h4>
         </div>
+        <div className="wrapper grid grid-cols-1 grid-rows-3 gap-0 sm:grid-cols-3 sm:grid-rows-1 sm:gap-3 md:gap-8">
+          <div className="bg grid grid-cols-1 gap-6">
+            {Solutions.slice(0, 3).map((solution, index) => (
+              <OurSolutionCard
+                key={index}
+                title={solution.title}
+                description={solution.description}
+                icon={solution.icon}
+                imageUrl={solution.imageUrl}
+                link={solution.Link}
+              />
+            ))}
+          </div>
 
-        <div className="grid grid-cols-1 gap-6">
-          {Solutions.slice(3, 6).map((solution, index) => (
-            <OurSolutionCard
-              key={index}
-              title={solution.title}
-              description={solution.description}
-              icon={solution.icon}
-              imageUrl={solution.imageUrl}
-              link={solution.Link}
+          <div className="w-full overflow-hidden rounded-lg">
+            <img
+              src={SolarDesign}
+              alt="Solar System"
+              className="h-full max-h-[45rem] w-full object-fill object-center sm:max-h-[50rem]"
+              loading="lazy"
             />
-          ))}
+          </div>
+
+          <div className="grid grid-cols-1 gap-6">
+            {Solutions.slice(3, 6).map((solution, index) => (
+              <OurSolutionCard
+                key={index}
+                title={solution.title}
+                description={solution.description}
+                icon={solution.icon}
+                imageUrl={solution.imageUrl}
+                link={solution.Link}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

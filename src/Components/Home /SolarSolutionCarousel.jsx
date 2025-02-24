@@ -13,6 +13,7 @@ import Hybrid from "../../assets/hybrid.jpg";
 import Custom from "../../assets/hybrid1.jpg";
 import onGrid from "../../assets/on-grid.jpg";
 import offGrid from "../../assets/on-grid.jpg";
+import { Helmet } from "react-helmet-async";
 
 export const SolarSolutionCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -102,8 +103,54 @@ export const SolarSolutionCarousel = () => {
   const prevSlide = () => {
     setActiveSlide((prev) => (prev - 1 + solutions.length) % solutions.length);
   };
+
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: solutions[activeSlide].title,
+    description: solutions[activeSlide].description,
+    image: solutions[activeSlide].imageUrl,
+    provider: {
+      "@type": "Organization",
+      name: "SolarPointSyatemsE.A",
+      url: "https://solarpointsystemsea.co.ke/",
+    },
+    serviceType: "Ways to Switch to Solar power in Kenya",
+
+    areaServed: {
+      "@type": "Country",
+      name: "Kenya",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "Ksh",
+      price: "Contact for Pricing",
+      url: "https://solarpointsystemsea.co.ke/contact",
+    },
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Benefits",
+        value: solutions[activeSlide].benefits.join(", "),
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Components",
+        value: solutions[activeSlide].components.join(", "),
+      },
+    ],
+  };
+
   return (
     <div className="mb-12 rounded-xl bg-white p-6">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      </Helmet>
+      <h3 className="mb-4 pl-12 text-2xl font-semibold text-black">
+        Ways to Switch to Solar :
+      </h3>
       <div className="relative">
         <div className="flex items-center">
           <button
