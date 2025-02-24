@@ -8,6 +8,7 @@ import WaterPump from "../../assets/Working-Pump..webp";
 import "aos/dist/aos.css";
 import OurSolutionCard from "./OurSolutionCard";
 import { Sun, Droplets, Flame, Battery, Wind, Wrench } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 function OurSolutions() {
   const Solutions = [
     {
