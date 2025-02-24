@@ -26,7 +26,7 @@ function OurSolutions() {
         "Efficient water pumping solutions powered by solar energy for agriculture and domestic use",
       icon: Droplets,
       imageUrl: WaterPump,
-      Link: "/solarwaterpump",
+      Link: "/solarwaterpumpssolutions",
     },
     {
       title: "Solar Water Heater",
