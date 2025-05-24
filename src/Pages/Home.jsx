@@ -30,9 +30,11 @@ function Home() {
     name: "SolarPointSystemsE.A",
     url: "https://solarpointsystemsea.co.ke/",
     logo: "https://solarpointsystemsea.co.ke/assets/Spm.svg",
-    description:
-      "Expert solar energy solutions provider in Kenya, specializing in solar panel installation, off-grid and on-grid solar systems, solar water heating, backup power solutions, and long-term solar maintenance services for homes and businesses.",
-    telephone: "+254 703704062 ",
+    description: "Expert solar energy solutions provider in Kenya...",
+    telephone: "+254703704062", // Removed space for consistency
+    image: "https://solarpointsystemsea.co.ke/assets/hero-2.webp",
+
+    // Fixed address structure
     address: {
       "@type": "PostalAddress",
       streetAddress: "123 Solar Street",
@@ -41,20 +43,24 @@ function Home() {
       postalCode: "00100",
       addressCountry: "KE",
     },
+
+    // Array format for sameAs
     sameAs: [
-      "https://www.instagram.com/solarpoint_systems_e.a?igsh=MXc5bTN0Mnk1a3g5dw==",
+      "https://www.instagram.com/solarpoint_systems_e.a",
       "https://web.facebook.com/profile.php?id=61557063135392",
       "https://x.com/Solarsystems_1",
     ],
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "17:00",
-    },
-    image: "https://solarpointsystemsea.co.ke/assets/hero-2.webp",
-  };
 
+    // Array format for opening hours
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+    ],
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
