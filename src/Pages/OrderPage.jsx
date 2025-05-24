@@ -25,7 +25,7 @@ function OrderPage() {
 
       {/* Go Back Button */}
       <button
-        onClick={() => navigate(-1)} // Navigate back to the previous page
+        onClick={() => navigate(-1)} 
         className="mb-6 rounded-md bg-gray-200 px-4 py-2 font-medium text-gray-800 transition-all hover:bg-gray-300"
       >
         Go Back

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 function Modal({ isOpen, onClose, product }) {
   const [quantity, setQuantity] = useState(1);

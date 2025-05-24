@@ -40,6 +40,56 @@ function SolarInstallation() {
         postalCode: "00100",
         addressCountry: "KE",
       },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        bestRating: "5",
+        ratingCount: "3",
+      },
+      review: [
+        {
+          "@type": "Review",
+          author: {
+            "@type": "Person",
+            name: "Mary Mwende",
+          },
+          reviewBody:
+            "The installation was quick and professional. We're seeing significant savings on our energy bills.",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: "5",
+            bestRating: "5",
+          },
+        },
+        {
+          "@type": "Review",
+          author: {
+            "@type": "Person",
+            name: "Martin A",
+          },
+          reviewBody:
+            "Excellent service from start to finish. The team was knowledgeable and efficient.",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: "5",
+            bestRating: "5",
+          },
+        },
+        {
+          "@type": "Review",
+          author: {
+            "@type": "Person",
+            name: "James Chege",
+          },
+          reviewBody:
+            "Great investment for our properties. The installation team was professional and thorough.",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: "5",
+            bestRating: "5",
+          },
+        },
+      ],
       sameAs: [
         "https://www.instagram.com/solarpoint_systems_e.a?igsh=MXc5bTN0Mnk1a3g5dw==",
         "https://web.facebook.com/profile.php?id=61557063135392",
@@ -67,10 +117,6 @@ function SolarInstallation() {
           description:
             "Custom solar solutions for homes, including design, installation, and smart monitoring.",
           serviceType: "Solar Installation",
-          provider: {
-            "@type": "LocalBusiness",
-            name: "SolarPointSystemsE.A",
-          },
         },
         {
           "@type": "Service",
@@ -78,10 +124,6 @@ function SolarInstallation() {
           description:
             "Large-scale solar systems for businesses with ROI optimization and energy consumption analysis.",
           serviceType: "Solar Installation",
-          provider: {
-            "@type": "LocalBusiness",
-            name: "SolarPointSystemsE.A",
-          },
         },
         {
           "@type": "Service",
@@ -89,10 +131,6 @@ function SolarInstallation() {
           description:
             "Advanced energy storage solutions for continuous power supply and backup power management.",
           serviceType: "Energy Storage",
-          provider: {
-            "@type": "LocalBusiness",
-            name: "SolarPointSystemsE.A",
-          },
         },
         {
           "@type": "Service",
@@ -100,10 +138,6 @@ function SolarInstallation() {
           description:
             "Regular maintenance, inspections, and system performance optimization to maximize efficiency.",
           serviceType: "Solar Maintenance",
-          provider: {
-            "@type": "LocalBusiness",
-            name: "SolarPointSystemsE.A",
-          },
         },
       ],
     },
@@ -127,50 +161,6 @@ function SolarInstallation() {
         "@type": "PropertyValue",
         name: "Warranty for Inverters",
         value: "10 Years",
-      },
-    ],
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Mary Mwende",
-        },
-        reviewBody:
-          "The installation was quick and professional. We're seeing significant savings on our energy bills.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Martin A",
-        },
-        reviewBody:
-          "Excellent service from start to finish. The team was knowledgeable and efficient.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "James Chege",
-        },
-        reviewBody:
-          "Great investment for our properties. The installation team was professional and thorough.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
       },
     ],
   };
